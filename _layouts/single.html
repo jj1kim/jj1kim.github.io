@@ -88,7 +88,7 @@ layout: default
         {% include post-share-link.html %}
       </footer>
 
-      {% if page.share and page.collection != 'posts' %}{% include social-share.html %}{% endif %}
+      {% if page.share and page.collection != 'posts' and page.collection != 'publications' %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>
