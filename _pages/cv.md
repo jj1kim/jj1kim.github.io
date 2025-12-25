@@ -1,64 +1,32 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: ""
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+<div style="text-align: left; margin-bottom: 1em; color: var(--global-text-color-light); font-size: 0.9em;">
+  <i class="fas fa-calendar-alt" aria-hidden="true"></i> Last updated: 2025/11/30
+</div>
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Download CV
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+You can download my CV in PDF format:
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+<div style="text-align: center; margin: 2em 0;">
+  <a href="/files/cv.pdf" download class="btn btn--primary" style="display: inline-block; padding: 0.75em 1.5em; background-color: #0066cc; color: white; text-decoration: none; border-radius: 4px; font-weight: bold;">
+    <i class="fas fa-download" aria-hidden="true"></i> Download CV (PDF)
+  </a>
+</div>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## View CV Online
+
+<iframe src="/files/cv.pdf" width="100%" height="800px" style="border: 1px solid #ccc; border-radius: 4px; margin-top: 2em;">
+  <p>Your browser does not support PDFs. <a href="/files/cv.pdf">Download the PDF</a> instead.</p>
+</iframe>
+
+<div style="margin-top: 1em; padding: 1em; background-color: var(--global-bg-color); border: 1px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color);">
+  <p><strong>Note:</strong> If the PDF does not display above, please use the download button to view it in your PDF reader.</p>
+</div>

@@ -25,6 +25,21 @@
       }
     }
   }
+  
+  // Remove underline from post titles
+  .archive__item-title a {
+    text-decoration: none !important;
+    
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none !important;
+    }
+  }
+  
+  .archive__item:hover .archive__item-title a {
+    text-decoration: none !important;
+  }
 }
 
 .archive__subtitle {
@@ -42,6 +57,18 @@
 .archive__item-title {
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
+
+  a {
+    text-decoration: none !important;
+    color: var(--global-text-color);
+    
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: none !important;
+      color: var(--global-link-color);
+    }
+  }
 
   a + a {
     opacity: 0.5;
@@ -80,7 +107,11 @@
   }
 
   .archive__item-title {
-    text-decoration: underline;
+    text-decoration: none;
+    
+    a {
+      text-decoration: none !important;
+    }
   }
 }
 
@@ -104,6 +135,29 @@
 
   .page__meta {
     margin: 0 0 4px;
+  }
+
+  .archive__item {
+    padding-left: 1.5em;
+    border-left: 3px solid var(--global-border-color);
+    margin-bottom: 2em;
+    padding-bottom: 1em;
+  }
+
+  // Darker border in light mode
+  html:not([data-theme="dark"]) & {
+    .archive__item {
+      border-left-color: #999 !important;
+    }
+  }
+}
+
+// Category filter box - darker border in light mode
+.category-filter-box {
+  border: 1px solid var(--global-border-color);
+  
+  html:not([data-theme="dark"]) & {
+    border-color: #999;
   }
 }
 
