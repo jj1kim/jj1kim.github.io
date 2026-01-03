@@ -20,3 +20,5 @@ This post contains some sample content to verify that the category filtering is 
 2. Click on "All" button - all posts should appear
 3. Click on other category buttons - this post should be hidden
 
+
+
