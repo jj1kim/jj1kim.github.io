@@ -23,7 +23,7 @@
       {% capture tag_word %}{{ keyValue[1] | strip_newlines }}{% endcapture %}
       {% if page.collection == 'posts' %}
         {% comment %} For blog posts, link to filtered blog post list {% endcomment %}
-        <a href="{{ base_path }}/year-archive/?category={{ tag_word | slugify }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
+        <a href="{{ base_path }}/blog/?category={{ tag_word | slugify }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
       {% else %}
         {% comment %} For other collections, use original tag archive link {% endcomment %}
         <a href="{{ base_path }}{{ tag_word | slugify | prepend: path_type | prepend: site.tag_archive.path }}" class="page__taxonomy-item" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}
