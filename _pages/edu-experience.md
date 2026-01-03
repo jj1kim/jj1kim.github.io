@@ -9,37 +9,55 @@ author_profile: true
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **B.S.** Major in Computer Science & Engineering, Minor in Cvill & Environmental Engineering, Seoul National University, 2029 (Expected)
+* **High School Diploma** in Sejong Science High School, 2022
+  * Top STEM-based school in South Korea
+  * Early Graduate in 2 year (academic excellance)
 
-Work experience
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Dec 2025 - Current : **Undergraduate Researcher**
+  * SNU Real-Time Ubiquitous System Laboratory
+  * Research about efficient computing system for Mobile SoC with Heterogeneous Accelerator
+  * Supervisor: Chang-Gun Lee
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* June 2025 – Nov 2025 : **Research Intern**
+  * SNU Scalable Computer Architecture Laboratory
+  * Research about efficient serving system for LLM using MoE
+  * Supervisor: Jung Ho Ahn
   
-Skills
+Honors & Awards
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **MICRO 2025 AI Model Benchmarking Competition**, 3rd place, Oct 2025
+  * Organized by IEEE/ACM International Symposium on Microarchitecture
+  * Participated in MICRO 2025 held in Seoul and achieved 3rd place in the AI Benchmarking Competition
+  * Developed an AI model that optimized both inference latency and accuracy for image classification tasks on the given NPU
+* **HACK SNU 2025**, 1st place, Oct 2025
+  * Organized by Primer, Korea's first startup accelerator
+  * Developed a service that, when deployed on a GPU cluster, lets users use GPUs conveniently while also boosting overall GPU utilization
+* **ESG Smartcity Startup Hackerthon**, 2nd place, Jun 2023
+  * Organized by Korean Standards Association
+  * Participated as GPU system engineer, one of AER team
+  * Discovered untapped spatial temperature distribution data within the company’s database and proposed a data-sharing partnership with the interior design industry
+  * Contributed to designing and implementing the data refinement and analysis pipeline, which led to measurable improvements in the partner company’s business model and revenue
 
-Service and leadership
+Club Experience
 ======
 * Currently signed in to 43 different slack teams
+
+
+TA
+======
+* **Server System Management TA**, SNU Semiconductor Specialized University, Mar 2024 – Sep 2025
+  * Participated as a member of the Semiconductor Specialized University initiative and oversaw end-to-end management of GPU servers
+  * Led the deployment of GPU clusters and implemented usability-enhancing systems such as automated resource allocation and activity logging
+  * Provided technical consultation for key infrastructure decisions and educated students on effective and responsible use of GPU resources
+
+Scholarship
+======
+* **Full Merit Scholarship**, Hyungae Scholarship Foundation, Feb 2024 – Current
+  * Received the scholarship upon being selected as one of the top 10 undergraduate students across the entire university.
+  * The scholarship guarantees full tuition coverage until graduation, amounting to over $17,000 in total.
+* **Full Merit Scholarship**, Seoul National University Alumni Association, Aug 2023
+  * Received the scholarship as the highest-ranked student in the CS undergraduate cohort
 
