@@ -7,7 +7,7 @@ tags:
   - Computer
 excerpt: 'A few stories about my dream and goal.'
 ---
-### 한국어
+<div style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 2px solid #333; border-radius: 6px; font-weight: bold; margin: 1em 0; font-size: 1.1em;">한국어</div>
 
 이 블로그의 첫 번째 글이라면, 당연히 자신을 잘 드러낼 수 있는 글이어야 합니다.
 특히 목표를 향한 열정을 삶의 원동력으로 삼는 저에게는, 스스로 가진 꿈과 목표에 대해 자세히 이야기하는 것만큼 중요한 것이 없다고 생각합니다.
@@ -79,6 +79,6 @@ emerging application의 service level objective를 맞추는 컴퓨팅 시스템
 
 ---
 
-### 영어
+<div style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 2px solid #333; border-radius: 6px; font-weight: bold; margin: 1em 0; font-size: 1.1em;">English</div>
 
 When I see this writing,
