@@ -10,8 +10,8 @@ redirect_from:
 Welcome to my personal website and blog.
 
 <figure style="margin: 1em 0;">
-  <img src="/images/myself.jpg" alt="personal image">
-  <figcaption style="font-size: 0.85em; color: #999; text-align: left; margin-top: 0.5em;">In October 2025, in Noboribetsu, Japan.</figcaption>
+  <img src="/images/myself.jpg" alt="personal image" style="max-width: 70%; display: block; margin: 0 auto;">
+  <figcaption style="font-size: 0.85em; color: #999; text-align: left; margin-top: 0.25em;">In October 2025, in Noboribetsu, Japan.</figcaption>
 </figure>
  
 I'm **Jiwon Kim**, who lives within a dream shaped by hopeful visions of the future.
