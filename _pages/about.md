@@ -24,7 +24,7 @@ Toward this goal, I'm going to contribute to solving real-world problems through
 I am currently based in South Korea and am an undergraduate student majoring in Computer Science at Seoul National University, where I am engaged in related research. 
 In addition, I actively communicate within various startup communities in Korea and enjoy thinking through the stages required to design businesses as a means of addressing the problem which I want to solve.
 
-If you share similar dreams or thinking, I would be delighted to connect and have a conversation via [email](). 
+If you share similar dreams or thinking, I would be delighted to connect and have a talk via [email](jeewonbob@snu.ac.kr) or else. 
 Even if not, you are always welcome to reach out if you would like to talk. 
-You may also see more about my thoughts and experiences through my [various blog posts]().  
+You may also see more about my thoughts and experiences through my [various blog posts](https://jj1kim.github.io/blog/).  
 (From time to time, I also post miscellaneous writings related to everyday life 😊)

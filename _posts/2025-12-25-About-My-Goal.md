@@ -82,7 +82,7 @@ excerpt: 'A few stories about my dream and goal.'
 
 For the first post on a personal blog, it should naturally be a piece that reveals the author as clearly as possible.
 For me, in particular, as someone who takes passion toward a goal as a driving force of life, I believe there is nothing more important than speaking in detail about the dreams and objectives I hold.
-Through this post, I hope to record several related thoughts and stories, and to make them a point of reference for understanding who “Jiwon Kim” is—not only for myself, but for anyone who reads this.
+Through this post, I record several related thoughts and stories, and I hope to make them a point of reference for understanding who “Jiwon Kim” is—not only for myself, but for anyone who reads this.
 
 # Toward a Life Focused on Goals, Not Means
 
