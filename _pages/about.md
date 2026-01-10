@@ -7,7 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-Welcome to my personal website and blog.  
+Welcome to my personal website and blog.
+
+<figure style="margin: 1em 0;">
+  <img src="/images/profile.jpg" alt="personal image">
+  <figcaption style="font-size: 0.85em; color: #999; text-align: left; margin-top: 0.5em;">In October 2025, in Noboribetsu, Japan.</figcaption>
+</figure>
+ 
 I'm **Jiwon Kim**, who lives within a dream shaped by hopeful visions of the future.
 I believe that emotions which energize life—such as passion and happiness—originate from dreams and goals, and I am living in pursuit of my own aspirations.
 I am fascinated by the belief that computing systems of increasingly extreme scales—either very large or very small—will become central to the world, and by the goal of enabling such systems to deliver high performance while faithfully reflecting the demands of the real world.  
