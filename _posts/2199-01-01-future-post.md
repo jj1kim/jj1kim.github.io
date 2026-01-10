@@ -1,11 +1,12 @@
 ---
-title: 'Future Blog Post'
-date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
+title: 'About My Goal [KR/EN]'
+date: 2025-06-25
+permalink: /posts/2025/06/25/About-My-Goal
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Thoughts
+  - Computer
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.
+
+Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.Test for my work.

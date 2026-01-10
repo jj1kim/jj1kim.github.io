@@ -21,12 +21,12 @@ Research experience
 * Dec 2025 - Current : **Undergraduate Researcher**
   * SNU Real-Time Ubiquitous System Laboratory
   * Research about efficient computing system for Mobile SoC with Heterogeneous Accelerator
-  * Supervisor : Chang-Gun Lee
+  * Advisor : Chang-Gun Lee
 
 * June 2025 – Nov 2025 : **Research Intern**
   * SNU Scalable Computer Architecture Laboratory
   * Research about efficient serving system for LLM using MoE
-  * Supervisor : Jung Ho Ahn
+  * Advisor : Jung Ho Ahn
   
 Honors & Awards
 ======
@@ -65,7 +65,7 @@ Club Experience
   * Managed overall operations of the club as Administator
 
 
-TA
+TA Experience
 ======
 * **Server System Management TA**, SNU Semiconductor Specialized University, Mar 2024 – Sep 2025
   * Participated as a member of the Semiconductor Specialized University initiative and oversaw end-to-end management of GPU servers
