@@ -71,7 +71,7 @@ excerpt: 'A few stories about my dream and goal.'
 
 따라서 저는, 극단적인 규모에서 real-world constraint와 emerging application의 service level objective를 모두 맞출 수 있도록 하는 컴퓨팅 시스템을 만드는 것을 제 목표로 삼았습니다. 
 여기서 말하는 컴퓨팅 시스템은 고전적으로 이야기하는 computer system 분야뿐만 아니라 microarchitecture에 대한 고민까지 포괄합니다. 
-이 문제를 푸는 것이 제가 가장 즐겁게 할 수 있는 일임을 깨달았고, 앞으로 연구 혹은 창업의 사이에서 그 수단을 가리지 않고 문제를 푸는데 이바지하고자 합니다.
+이 문제를 푸는 것이 제가 가장 즐겁게 할 수 있는 일임을 깨달았고, 앞으로 연구와 창업의 사이에서 그 수단을 가리지 않고 문제를 푸는데 이바지하고자 합니다.
 
 
 2025년 12월 25일, 크리스마스의 분위기에 젖어
@@ -80,4 +80,71 @@ excerpt: 'A few stories about my dream and goal.'
 
 <div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">English</div>
 
-When I see this writing,
+For the first post on a personal blog, it should naturally be a piece that reveals the author as clearly as possible.
+For me, in particular, as someone who takes passion toward a goal as a driving force of life, I believe there is nothing more important than speaking in detail about the dreams and objectives I hold.
+Through this post, I hope to record several related thoughts and stories, and to make them a point of reference for understanding who “Jiwon Kim” is—not only for myself, but for anyone who reads this.
+
+# Toward a Life Focused on Goals, Not Means
+
+If one is a typical student who has gone through Korea’s formal education system, I believe that the shape of life up to high school graduation is largely similar across individuals.
+Here, the word “shape” refers not only to experiences themselves, but also to the concerns and thoughts that each person comes to hold through those experiences.
+This is a result produced by Korea’s relatively rigid education system and culture—secure, if spoken of positively, but uniform, if spoken of critically.
+
+Embarrassingly, I too, at the time when I first entered university after graduating from high school, could not find what was truly enjoyable, just like many of my peers.
+Moreover, I had grown tired of the very process that adults often describe as “enduring quietly and persevering diligently”—the accumulation of uninteresting stages in order to achieve something.
+As a result, quite naturally, I began to think about what I wanted at that moment, and what could genuinely draw my interest.
+Of course, I spent a long time contemplating what exactly this “interest” meant, but setting those detailed thoughts aside, I was careful to ensure that it did not become merely a simple “interest in knowing” felt in the process of learning something new.
+
+The conclusion I reached at that time can be summarized as, “Let’s try starting a business.”
+There was no grand reason behind this conclusion.
+I simply wanted to earn a lot of money, and I believed that the fastest and most effective way to do so was to solve the needs of the largest possible group of consumers.
+Looking back now, I feel that perhaps around 70% of aspiring entrepreneurs think in much the same way as I did at the time.
+
+However, as time passed and I met the remaining 30% of entrepreneurs, my perspective gradually changed.
+Regardless of what they might think deep down, I have never seen an entrepreneur explicitly say, “I’m starting a business because I want to make a lot of money.”
+That said, the reason why someone’s eyes burn with intensity can never be fully concealed, and it becomes sufficiently apparent through conversation even if not stated outright.
+Those outstanding 30% of entrepreneurs (or aspiring entrepreneurs) always had burning eyes, but the reason was never money.
+
+I wanted to know what they were burning for, and I made an effort to learn their mindset by talking with as many people as possible.
+Through these conversations, I realized that although their reasons differed, they all possessed tremendous passion for the problems they wanted to solve, and behind that passion lay grounds that were personally understandable to them.
+I also came to understand that this is what makes one’s work genuinely enjoyable, and that it becomes a source of motivation that cannot even be compared to something like money.
+
+After being deeply influenced by this realization, I continued to think in order to find grounds that I myself could strongly and clearly understand.
+Under my belief that no matter what one does in life—even something very simple—life is ultimately a continuous process of solving problems, I began to reflect on why I feel interest in certain problems in the first place.
+
+# Sustainability Is the Core
+
+After a long period of contemplation, I discovered that I am interested in “the largest problem that will inevitably confront us while I am alive.”
+From time to time, we hear about remarkable figures such as Elon Musk speaking of sending humanity to Mars or creating a new form of humankind, but to me, such stories feel like pages from a science fiction novel.
+In other words, while it is true that larger problems can feel more rewarding and interesting, my underlying philosophy is that my interest actually diminishes when it comes to problems that are difficult to tangibly experience within one’s lifetime.
+
+Then, what problem do you think is the largest among those that will inevitably confront us?
+Each person may have their own answer, but I defined it, on a micro level, as “the problem of environmental pollution,” and on a macro level, as “the problem of sustainability.”
+On Earth, where there is no meaningful influx of resources other than solar energy, all resources gradually transform into unusable forms according to the second law of thermodynamics.
+The term “resources” here does not refer solely to things like fossil energy, but broadly encompasses all elements that exist in the real world, including things such as space itself.
+Under these circumstances, we can only maintain a “sustainable” way of life by reorganizing existing systems so that resources are used as efficiently as possible.
+If we fail to do so, then at least within my lifetime, problems arising from resource scarcity will loom before us like an insurmountable wall.
+
+To further concretize this conclusion, we must consider which systems have the greatest impact on sustainability.
+In other words, we must think about which systems, when reorganized efficiently, would most significantly improve sustainability.
+I came to believe that “computer systems” are precisely the most important systems in the time to come, and also the systems that will consume the greatest amount of resources.
+After trillions of transistors and hundreds of millions of processing units began to vastly surpass human computational capacity, computers became deeply involved in all fields, and it is now impossible to stop using them.
+However, modern computer systems still fail to use resources with sufficient efficiency, and therefore, reorganizing this aspect will have the greatest impact on sustainability.
+
+# Toward the True Meaning of Next-Generation Computing
+
+After organizing this series of thoughts, the definition I arrived at, in my own terms, for “Next-Generation Computing” is as follows:
+
+<p style="text-align: center;">＂A computing system that fits newly evolving real-world constraints while meeting the service level objectives of emerging applications＂</p>
+
+The “real-world constraints” referred to here are directly connected to sustainability.
+They include resource constraints that arise as available resources continue to diminish, and encompass keywords such as low power consumption and low carbon emission.
+In the future, computing at even more extreme scales—whether ultra-small or ultra-large—will likely become commonplace, and at such scales, the influence of real-world constraints will be particularly pronounced.
+For example, when placing computing devices inside the human body, it becomes necessary to build a computing system that can guarantee worst-case execution time with only a minimal battery.
+Likewise, when running massive AI models in exa-scale data centers for AGI, it becomes necessary to build computing systems that can minimize enormous levels of power consumption.
+
+Accordingly, I have set my goal as creating computing systems that can satisfy both real-world constraints and the service level objectives of emerging applications, even at extreme scales.
+The computing systems referred to here encompass not only what is traditionally discussed in the field of computer systems, but also considerations down to microarchitecture.
+I realized that solving this problem is what I can enjoy doing the most, and going forward, I intend to contribute to solving it by any means necessary, somewhere between research and entrepreneurship.
+
+December 25, 2025, in the mood of Christmas
