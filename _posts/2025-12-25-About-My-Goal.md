@@ -7,9 +7,9 @@ tags:
   - Computer
 excerpt: 'A few stories about my dream and goal.'
 ---
-<div style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 2px solid #333; border-radius: 6px; font-weight: bold; margin: 1em 0; font-size: 1.1em;">한국어</div>
+<div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">한국어</div>
 
-이 블로그의 첫 번째 글이라면, 당연히 자신을 잘 드러낼 수 있는 글이어야 합니다.
+이 블로그의 첫 번째 글이라면, 당연히 자신을 가장 잘 드러낼 수 있는 글이어야 합니다.
 특히 목표를 향한 열정을 삶의 원동력으로 삼는 저에게는, 스스로 가진 꿈과 목표에 대해 자세히 이야기하는 것만큼 중요한 것이 없다고 생각합니다.
 이번 글을 통해 관련된 몇 가지 이야기들을 기록하고, 이를 저뿐만 아니라 다른 모든 사람까지 "김지원"이라는 사람에 대한 이해의 기준점으로 삼을 수 있기를 바랍니다.
 
@@ -63,11 +63,10 @@ excerpt: 'A few stories about my dream and goal.'
 
 일련의 생각들을 정리하며, 진정한 의미의 "Next-Generation Computing"에 대해 스스로 내린 나름의 정의는 다음과 같습니다.
 
-<p style="text-align: center;">＂새로 변화하는 real-world constraint에 적합하면서도,   
-emerging application의 service level objective를 맞추는 컴퓨팅 시스템＂</p>
+<p style="text-align: center;">＂새로 변화하는 real-world constraint에 적합하면서도, emerging application의 service level objective를 맞추는 컴퓨팅 시스템＂</p>
 
 여기서 말하는 "real-world constraint"가 곧 지속가능성과 연결되어있는 부분인데, 점점 줄어드는 가용 자원의 양에 따라 발생하는 자원 제한 조건이 포함되며, 저전력 및 저탄소와 같은 키워드들이 이에 속할 수 있습니다.
-다가올 미래에는 초소형 혹은 초대형과 같은 더욱 극단적인 규모에서 컴퓨팅을 하는 것이 일반적 이어질 텐데, 이때는 특히나 real-world constraint에 의한 영향이 두드러집니다.
+다가올 미래에는 초소형 혹은 초대형과 같은 더욱 극단적인 규모에서 컴퓨팅을 하는 것이 일반적일 텐데, 이때는 특히나 real-world constraint에 의한 영향이 두드러집니다.
 예를 들어서, 사람의 몸에 컴퓨팅 디바이스를 넣게 될 때는 최소한의 배터리만으로도 최악 시간을 보장하는 컴퓨팅 시스템을 구축할 필요가 있고, AGI를 위해 exa-scale의 데이터센터에서 초거대 AI 모델을 돌릴 때는 어마어마한 전력 소모량을 최소화할 수 있는 컴퓨팅 시스템을 구축할 필요가 있습니다.
 
 따라서 저는, 극단적인 규모에서 real-world constraint와 emerging application의 service level objective를 모두 맞출 수 있도록 하는 컴퓨팅 시스템을 만드는 것을 제 목표로 삼았습니다. 
@@ -79,6 +78,6 @@ emerging application의 service level objective를 맞추는 컴퓨팅 시스템
 
 ---
 
-<div style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 2px solid #333; border-radius: 6px; font-weight: bold; margin: 1em 0; font-size: 1.1em;">English</div>
+<div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">English</div>
 
 When I see this writing,

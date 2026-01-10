@@ -17,7 +17,7 @@ Welcome to my personal website and blog.
 I'm **Jiwon Kim**, who lives within a dream shaped by hopeful visions of the future.
 I believe that emotions which energize life—such as passion and happiness—originate from dreams and goals, and I am living in pursuit of my own aspirations.
 I am fascinated by the belief that computing systems of extreme scales—either very large or very small—will become central to the world, and by the goal of enabling such systems to deliver high performance while faithfully reflecting the demands of the real world.  
-(For a more details of my dreams and goals, please refer to the following [blog post](https://www.google.com))
+(For a more details of my dreams and goals, please refer to the following [blog post](https://jj1kim.github.io/posts/2025/12/25/About-My-Goal))
 
 
 Toward this goal, I'm going to contribute to solving real-world problems through a variety of approaches, spanning both research and entrepreneurship.   
