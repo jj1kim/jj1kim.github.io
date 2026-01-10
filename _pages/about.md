@@ -11,12 +11,12 @@ Welcome to my personal website and blog.
 
 <figure style="margin: 1em 0;">
   <img src="/images/myself.jpg" alt="personal image" style="max-width: 70%; display: block; margin: 0 auto;">
-  <figcaption style="font-size: 0.85em; color: #999; text-align: left; margin-top: 0.25em;">In October 2025, in Noboribetsu, Japan.</figcaption>
+  <figcaption style="font-size: 0.85em; color: #999; text-align: left; margin: 0.25em auto 0 auto; max-width: 70%;">In October 2025, in Noboribetsu, Japan.</figcaption>
 </figure>
  
 I'm **Jiwon Kim**, who lives within a dream shaped by hopeful visions of the future.
 I believe that emotions which energize life—such as passion and happiness—originate from dreams and goals, and I am living in pursuit of my own aspirations.
-I am fascinated by the belief that computing systems of increasingly extreme scales—either very large or very small—will become central to the world, and by the goal of enabling such systems to deliver high performance while faithfully reflecting the demands of the real world.  
+I am fascinated by the belief that computing systems of extreme scales—either very large or very small—will become central to the world, and by the goal of enabling such systems to deliver high performance while faithfully reflecting the demands of the real world.  
 (For a more details of my dreams and goals, please refer to the following [blog post](https://www.google.com))
 
 
