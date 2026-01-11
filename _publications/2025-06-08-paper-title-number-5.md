@@ -4,7 +4,7 @@ collection: publications
 category: conferences
 permalink: /publication/layered-prefill
 excerpt: 'This paper is about a famous math equation, $$E=mc^2$$'
-date: 2024-02-17
+date: 2025-10-09
 author: 'Gunjun Lee, <strong><u>Jiwon Kim</u></strong>, Jaiyoung Park, Younjoo Lee and Jung Ho Ahn'
 venue: 'arXiv preprint (under review)'
 paperurl: 'https://arxiv.org/abs/2510.08055'
