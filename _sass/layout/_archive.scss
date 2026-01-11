@@ -150,6 +150,24 @@
       border-left-color: #999 !important;
     }
   }
+
+  // For publications, remove border from article and apply to content div
+  .archive__item--publication {
+    border-left: none !important;
+    padding-left: 0 !important;
+    padding-bottom: 0 !important;
+
+    .archive__item-content {
+      padding-left: 1.5em;
+      border-left: 3px solid var(--global-border-color);
+    }
+  }
+
+  html:not([data-theme="dark"]) & {
+    .archive__item--publication .archive__item-content {
+      border-left-color: #999 !important;
+    }
+  }
 }
 
 // Category filter box - darker border in light mode
