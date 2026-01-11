@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}" itemscope itemtype="http://schema.org/CreativeWork"{% if post.collection == 'publications' and include.type != 'grid' %} style="display: flex; align-items: stretch; gap: 1.5em; margin-bottom: 2em;"{% endif %}>
+  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -59,11 +59,5 @@
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
     </div>
-    
-    {% if post.collection == 'publications' and include.type != 'grid' %}
-      <div class="archive__item-teaser" style="flex-shrink: 0; width: 150px; border-radius: 4px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-        <img src="{{ base_path }}/images/500x300.png" alt="" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-      </div>
-    {% endif %}
   </article>
 </div>
