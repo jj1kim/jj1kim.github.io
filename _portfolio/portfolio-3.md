@@ -1,5 +1,5 @@
 ---
-title: "NPU-friendly Image Classification"
+title: "ICM-NPU"
 excerpt: "A deep learning model optimized specifically for Neural Processing Units (NPUs), achieving high accuracy while maintaining efficient inference performance.<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
