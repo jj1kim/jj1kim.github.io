@@ -36,67 +36,91 @@ author_profile: true
 
 <h2>Projects</h2><hr />
 
-<div style="clear: both; overflow: hidden;">
+<div class="portfolio-grid">
 {% for post in site.portfolio %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
 </div>
 
 <style>
-  /* Portfolio grid: Image size first (500px x 300px), card adjusts */
-  .grid__item .archive__item--portfolio {
-    float: left !important;
-    clear: none !important;
-    margin-left: 0 !important;
-    margin-right: 1.5em !important;
-    margin-bottom: 2em !important;
-    box-sizing: border-box !important;
-    /* Remove width constraints - let card adjust to image size */
-    width: auto !important;
-    min-width: auto !important;
-    max-width: none !important;
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    clear: both;
   }
-  
-  /* Image: fixed size 500px x 300px - highest priority */
-  .grid__item .archive__item--portfolio .archive__item-teaser {
-    margin: 0 !important;
-    padding: 0.5em !important;
-    padding-bottom: 0 !important;
-    width: auto !important;
-    overflow: hidden !important;
-    display: flex !important;
-    justify-content: center !important;
+
+  .portfolio-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--global-bg-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
   }
-  
-  .grid__item .archive__item--portfolio .archive__item-teaser img {
-    width: 500px !important;
-    height: 300px !important;
-    min-width: 500px !important;
-    max-width: 500px !important;
-    min-height: 300px !important;
-    max-height: 300px !important;
-    display: block !important;
-    object-fit: cover !important;
-    flex-shrink: 0 !important;
+
+  .portfolio-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
-  
-  .grid__item .archive__item--portfolio:nth-child(3n+1) {
-    clear: left !important;
-    margin-left: 0 !important;
+
+  /* Dark mode: white border */
+  html[data-theme="dark"] .portfolio-card {
+    border-color: #fff;
   }
-  
-  /* Title: smaller font size */
-  .grid__item .archive__item--portfolio .archive__item-title {
-    color: #000 !important;
-    font-size: 1.1em !important;
+
+  /* Image: fixed 500px x 300px with spacing from border */
+  .portfolio-card-image {
+    padding: 1em;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
-  
-  html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title {
-    color: #fff !important;
+
+  .portfolio-card-image img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
   }
-  
-  html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title a {
-    color: #fff !important;
+
+  /* Title */
+  .portfolio-card-title {
+    margin: 0.75em 1em;
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* Dark mode: white title */
+  html[data-theme="dark"] .portfolio-card-title {
+    color: #fff;
+  }
+
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .portfolio-grid {
+      gap: 1.5em;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      gap: 1em;
+    }
+    
+    .portfolio-card-image img {
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+    }
   }
 </style>
 
