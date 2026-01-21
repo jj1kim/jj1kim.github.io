@@ -257,7 +257,8 @@
     }
 
     .archive__item-teaser {
-      width: 100%;
+      width: calc(100% - 2em);
+      margin: 1em;
       overflow: hidden;
       margin-bottom: 0;
 
@@ -308,35 +309,41 @@
   }
 }
 
-// Portfolio grid: 3 items per row
+// Portfolio grid: 3 items per row - override gallery mixin
 .grid__item .archive__item--portfolio {
-  float: left;
+  float: left !important;
+  margin-left: 0 !important;
+  clear: none !important;
   
   @include breakpoint($medium) {
-    width: calc(33.333% - 1.333em) !important;
-    margin-right: 2em;
+    // Gallery mixin override: exact width for 3 items with spacing
+    width: calc((100% - 4em) / 3) !important; // 3 items, 2 gaps of 2em each
+    margin-right: 2em !important;
     margin-bottom: 2em;
+    margin-left: 0 !important;
     
     &:nth-child(3n) {
-      margin-right: 0;
+      margin-right: 0 !important;
+    }
+    
+    &:nth-child(3n+1) {
+      clear: left !important;
+      margin-left: 0 !important;
     }
   }
 
   @include breakpoint($small) {
-    width: calc(50% - 1em) !important;
-    margin-right: 2em;
+    width: calc((100% - 2em) / 2) !important; // 2 items, 1 gap of 2em
+    margin-right: 2em !important;
+    margin-left: 0 !important;
     
     &:nth-child(2n) {
-      margin-right: 0;
+      margin-right: 0 !important;
     }
-  }
-}
-
-// Clear float for portfolio grid
-.grid__item {
-  .archive__item--portfolio {
-    &:nth-child(3n+1) {
-      clear: left;
+    
+    &:nth-child(2n+1) {
+      clear: left !important;
+      margin-left: 0 !important;
     }
   }
 }
