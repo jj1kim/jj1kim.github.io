@@ -91,6 +91,14 @@
   & + p {
     text-indent: 0;
   }
+
+  img {
+    max-width: 50%;
+    height: auto;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+    border-radius: $border-radius;
+  }
 }
 
 .archive__item-teaser {
