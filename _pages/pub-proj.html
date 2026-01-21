@@ -48,6 +48,15 @@ author_profile: true
     flex-wrap: wrap;
     gap: 2em;
     clear: both;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  /* Ensure grid items don't use float in portfolio grid */
+  .portfolio-grid .grid__item {
+    float: none !important;
+    clear: none !important;
+    margin: 0 !important;
   }
 
   .portfolio-card {
@@ -86,14 +95,14 @@ author_profile: true
     overflow: hidden;
   }
 
-  /* Image: fixed 500px x 300px - size is guaranteed */
+  /* Image: fixed 250px x 150px - size is guaranteed */
   .portfolio-card-image img {
-    width: 500px !important;
-    height: 300px !important;
-    min-width: 500px !important;
-    max-width: 500px !important;
-    min-height: 300px !important;
-    max-height: 300px !important;
+    width: 250px !important;
+    height: 150px !important;
+    min-width: 250px !important;
+    max-width: 250px !important;
+    min-height: 150px !important;
+    max-height: 150px !important;
     object-fit: cover;
     display: block;
     flex-shrink: 0;
@@ -130,9 +139,9 @@ author_profile: true
     
     .portfolio-card-image img {
       width: 100% !important;
-      max-width: 500px !important;
+      max-width: 250px !important;
       min-width: auto !important;
-      height: 300px !important;
+      height: 150px !important;
     }
   }
 </style>
