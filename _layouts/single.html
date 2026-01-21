@@ -54,7 +54,15 @@ layout: default
       <section class="page__content" itemprop="text"{% if page.collection == 'publications' %} style="margin-top: 2em;"{% endif %}>
         {% if page.collection == 'publications' %}
         <div style="text-align: center; margin-bottom: 2em;">
-          <img src="{{ base_path }}/images/500x300.png" alt="" style="width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 4px;">
+          {% if page.header.image %}
+            {% if page.header.image contains "://" %}
+              <img src="{{ page.header.image }}" alt="" style="width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 4px;">
+            {% else %}
+              <img src="{{ base_path }}/images/{{ page.header.image }}" alt="" style="width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 4px;">
+            {% endif %}
+          {% else %}
+            <img src="{{ base_path }}/images/500x300.png" alt="" style="width: 70%; height: auto; display: block; margin: 0 auto; border-radius: 4px;">
+          {% endif %}
         </div>
         {% endif %}
         {{ content }}
