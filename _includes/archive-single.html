@@ -7,13 +7,19 @@
   {% if excerpt_img.size > 1 %}
     {% assign img_tag = excerpt_img[1] | split: '>' | first %}
     {% assign img_src = img_tag | split: "src='" | last | split: "'" | first %}
-    {% if img_src == "" %}
+    {% if img_src == "" or img_src == nil %}
       {% assign img_src = img_tag | split: 'src="' | last | split: '"' | first %}
     {% endif %}
-    {% capture teaser %}{{ img_src }}{% endcapture %}
+    {% if img_src != "" and img_src != nil %}
+      {% capture teaser %}{{ img_src }}{% endcapture %}
+    {% else %}
+      {% assign teaser = "/images/500x300.png" %}
+    {% endif %}
   {% else %}
-    {% assign teaser = site.teaser %}
+    {% assign teaser = "/images/500x300.png" %}
   {% endif %}
+{% elsif post.collection == 'portfolio' %}
+  {% assign teaser = "/images/500x300.png" %}
 {% else %}
   {% assign teaser = site.teaser %}
 {% endif %}
@@ -28,17 +34,17 @@
   <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}{% if post.collection == 'portfolio' and include.type == 'grid' %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if post.collection == 'portfolio' and include.type == 'grid' %}
       <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="archive__item-link">
-        {% if teaser %}
-          <div class="archive__item-teaser">
-            <img src=
-              {% if teaser contains "://" %}
-                "{{ teaser }}"
-              {% else %}
-                "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-              {% endif %}
-              alt="{{ title }}">
-          </div>
-        {% endif %}
+        <div class="archive__item-teaser">
+          <img src=
+            {% if teaser contains "://" %}
+              "{{ teaser }}"
+            {% elsif teaser contains "/images/" %}
+              "{{ base_path }}{{ teaser }}"
+            {% else %}
+              "{{ base_path }}/images/{{ teaser }}"
+            {% endif %}
+            alt="{{ title }}">
+        </div>
         <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
       </a>
     {% elsif include.type == "grid" and teaser %}
