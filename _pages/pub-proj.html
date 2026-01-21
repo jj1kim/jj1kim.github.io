@@ -50,8 +50,7 @@ author_profile: true
     clear: both;
     justify-content: flex-start;
     align-items: flex-start;
-    overflow: visible !important; /* Allow shadows to be visible */
-    padding-bottom: 2em !important; /* Extra space for shadows at the bottom */
+    overflow: visible !important;
   }
   
   /* Ensure grid items don't use float in portfolio grid */
@@ -81,22 +80,21 @@ author_profile: true
     border: 1px solid #999; /* Lighter border for light mode */
     border-radius: 0; /* Sharp corners */
     background-color: var(--global-bg-color);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition: transform 0.2s ease;
     cursor: pointer;
     /* Card adjusts to content size */
     width: 100%;
     min-width: fit-content;
     max-width: none;
     overflow: visible !important;
-    /* Add shadow to all cards */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    /* Ensure shadow is visible - add padding/margin */
-    margin-bottom: 12px; /* Extra space for shadow (8px shadow + 4px margin) */
+    /* Remove shadow */
+    box-shadow: none;
+    margin-bottom: 0;
   }
 
   .portfolio-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: none;
   }
 
   /* Dark mode: lighter border */
