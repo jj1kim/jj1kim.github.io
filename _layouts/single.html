@@ -5,7 +5,9 @@ layout: default
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% include page__hero.html %}
+  {% unless page.collection == 'publications' %}
+    {% include page__hero.html %}
+  {% endunless %}
 {% endif %}
 
 {% if page.url != "/" and site.breadcrumbs %}
