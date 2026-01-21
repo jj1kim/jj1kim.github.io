@@ -51,6 +51,7 @@ author_profile: true
     justify-content: flex-start;
     align-items: flex-start;
     overflow: visible !important;
+    padding-bottom: 1em; /* Extra space for shadows at the bottom */
   }
   
   /* Ensure grid items don't use float in portfolio grid */
@@ -84,7 +85,7 @@ author_profile: true
     border-left: 1px solid #999 !important;
     border-radius: 0; /* Sharp corners */
     background-color: var(--global-bg-color);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     /* Card adjusts to content size */
     width: 100%;
@@ -92,14 +93,14 @@ author_profile: true
     max-width: none;
     overflow: visible !important;
     box-sizing: border-box !important;
-    /* Remove shadow */
-    box-shadow: none;
-    margin-bottom: 0;
+    /* Add shadow below the card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px; /* Space for shadow */
   }
 
   .portfolio-card:hover {
     transform: translateY(-4px);
-    box-shadow: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   /* Dark mode: lighter border */
