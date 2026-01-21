@@ -77,7 +77,11 @@ author_profile: true
     flex-direction: column;
     text-decoration: none !important;
     color: inherit;
-    border: 1px solid #999; /* Lighter border for light mode */
+    border: 1px solid #999 !important; /* Lighter border for light mode */
+    border-top: 1px solid #999 !important;
+    border-right: 1px solid #999 !important;
+    border-bottom: 1px solid #999 !important;
+    border-left: 1px solid #999 !important;
     border-radius: 0; /* Sharp corners */
     background-color: var(--global-bg-color);
     transition: transform 0.2s ease;
@@ -87,6 +91,7 @@ author_profile: true
     min-width: fit-content;
     max-width: none;
     overflow: visible !important;
+    box-sizing: border-box !important;
     /* Remove shadow */
     box-shadow: none;
     margin-bottom: 0;
@@ -99,7 +104,11 @@ author_profile: true
 
   /* Dark mode: lighter border */
   html[data-theme="dark"] .portfolio-card {
-    border-color: #ccc; /* Lighter border for dark mode */
+    border-color: #ccc !important; /* Lighter border for dark mode */
+    border-top: 1px solid #ccc !important;
+    border-right: 1px solid #ccc !important;
+    border-bottom: 1px solid #ccc !important;
+    border-left: 1px solid #ccc !important;
   }
 
   /* Image container: padding from border */
@@ -130,12 +139,14 @@ author_profile: true
     margin: 0.75em 1em;
     margin-top: 0.75em;
     margin-bottom: 0.75em;
+    padding-bottom: 0; /* Ensure no padding cuts border */
     text-align: center;
     font-size: 1.15em;
     font-weight: 500;
     text-decoration: none !important;
     color: #000;
     border-bottom: none !important;
+    overflow: visible; /* Allow border to be visible */
   }
   
   /* Remove underline from title when inside link */
