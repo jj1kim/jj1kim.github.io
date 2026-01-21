@@ -50,6 +50,8 @@ author_profile: true
     clear: both;
     justify-content: flex-start;
     align-items: flex-start;
+    overflow: visible; /* Allow shadows to be visible */
+    padding-bottom: 1em; /* Add space for shadows at the bottom */
   }
   
   /* Ensure grid items don't use float in portfolio grid */
@@ -69,7 +71,7 @@ author_profile: true
     display: block;
     text-decoration: none !important;
     color: inherit;
-    border: 1px solid #000;
+    border: 1px solid #999; /* Lighter border for light mode */
     border-radius: 0; /* Sharp corners */
     background-color: var(--global-bg-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -81,6 +83,7 @@ author_profile: true
     overflow: visible;
     /* Add shadow to all cards */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5em; /* Add space at bottom for shadow */
   }
 
   .portfolio-card:hover {
@@ -88,9 +91,9 @@ author_profile: true
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
-  /* Dark mode: white border */
+  /* Dark mode: lighter border */
   html[data-theme="dark"] .portfolio-card {
-    border-color: #fff;
+    border-color: #ccc; /* Lighter border for dark mode */
   }
 
   /* Image container: padding from border */
