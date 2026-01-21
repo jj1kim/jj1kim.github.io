@@ -53,9 +53,15 @@ author_profile: true
   }
   
   /* Ensure grid items don't use float in portfolio grid */
+  /* Remove all margins - gap will handle spacing */
   .portfolio-grid .grid__item {
     float: none !important;
     clear: none !important;
+    margin: 0 !important;
+  }
+  
+  /* Remove margins from article inside grid item - gap handles spacing */
+  .portfolio-grid .grid__item .archive__item--portfolio {
     margin: 0 !important;
   }
 
@@ -116,8 +122,19 @@ author_profile: true
     text-align: center;
     font-size: 1.15em;
     font-weight: 500;
-    text-decoration: none;
+    text-decoration: none !important;
     color: #000;
+  }
+  
+  /* Remove underline from title when inside link */
+  .portfolio-card .portfolio-card-title {
+    text-decoration: none !important;
+    border-bottom: none !important;
+  }
+  
+  .portfolio-card .portfolio-card-title a {
+    text-decoration: none !important;
+    border-bottom: none !important;
   }
 
   /* Dark mode: white title */
