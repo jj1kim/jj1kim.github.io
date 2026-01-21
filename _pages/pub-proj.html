@@ -48,11 +48,11 @@ author_profile: true
     float: left !important;
     clear: none !important;
     margin-left: 0 !important;
-    margin-right: 2em !important;
+    margin-right: 1.5em !important;
     margin-bottom: 2em !important;
-    width: calc((100% - 4em) / 3) !important;
-    min-width: calc((100% - 4em) / 3) !important;
-    max-width: calc((100% - 4em) / 3) !important;
+    width: calc((100% - 3em) / 3) !important;
+    min-width: calc((100% - 3em) / 3) !important;
+    max-width: calc((100% - 3em) / 3) !important;
     box-sizing: border-box !important;
   }
   
@@ -65,7 +65,11 @@ author_profile: true
     margin-left: 0 !important;
   }
   
-  /* Dark mode title color */
+  /* Title color - light mode black, dark mode white */
+  .grid__item .archive__item--portfolio .archive__item-title {
+    color: #000 !important;
+  }
+  
   html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title {
     color: #fff !important;
   }
@@ -74,11 +78,24 @@ author_profile: true
     color: #fff !important;
   }
   
+  /* Larger image */
+  .grid__item .archive__item--portfolio .archive__item-teaser {
+    margin: 0.5em !important;
+    margin-bottom: 0 !important;
+    width: calc(100% - 1em) !important;
+  }
+  
+  .grid__item .archive__item--portfolio .archive__item-teaser img {
+    min-height: 250px !important;
+    object-fit: cover !important;
+  }
+  
   @media (max-width: 768px) {
     .grid__item .archive__item--portfolio {
-      width: calc((100% - 2em) / 2) !important;
-      min-width: calc((100% - 2em) / 2) !important;
-      max-width: calc((100% - 2em) / 2) !important;
+      width: calc((100% - 1.5em) / 2) !important;
+      min-width: calc((100% - 1.5em) / 2) !important;
+      max-width: calc((100% - 1.5em) / 2) !important;
+      margin-right: 1.5em !important;
     }
     
     .grid__item .archive__item--portfolio:nth-child(2n) {
@@ -90,7 +107,7 @@ author_profile: true
     }
     
     .grid__item .archive__item--portfolio:nth-child(3n) {
-      margin-right: 2em !important;
+      margin-right: 1.5em !important;
     }
     
     .grid__item .archive__item--portfolio:nth-child(3n+1) {
