@@ -55,9 +55,9 @@
 
     {% unless post.collection == 'publications' %}
       {% if post.excerpt and site.read_more != 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0;">{{ post.excerpt | markdownify | replace: '<img', '<img style="max-width: 50%; height: auto; display: block; margin-top: 0.75em; margin-bottom: 0.5em; border-radius: 4px;"' }}</div>
       {% elsif post.excerpt and site.read_more == 'enabled' %}
-      <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
+      <div class="archive__item-excerpt" itemprop="description" style="margin-top: 0;"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | replace: '<img', '<img style="max-width: 50%; height: auto; display: block; margin-top: 0.75em; margin-bottom: 0.5em; border-radius: 4px;"' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></div>
       {% endif %}
     {% endunless %}
     </div>
