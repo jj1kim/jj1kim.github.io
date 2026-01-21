@@ -47,19 +47,19 @@ Honors & Awards
 
 Club Experience
 ======
-* **Bacchus**, Mar 2024 – Current
+* **Bacchus** <a href="https://bacchus.snucse.org" target="_blank" rel="noopener noreferrer" aria-label="Bacchus link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Mar 2024 – Current
   * Served as the president of Bacchus, a student system administration club, and oversaw the full operation of all GPU and CPU servers within the university’s Computer Science department
   * Clustered all servers with Kubernetes, Developed integrated dashboards and logging systems
   * Developed a Kubernetes-native GPU resource scheduler to automate allocation and ensure fair, efficient usage for all students in the department
   * Maintained essential student services such as account management and community platforms, incorporating ongoing feedback from administrative staff and users
 
 
-* **WaffleStudio**, Sep 2023 – Jul 2025
+* **WaffleStudio** <a href="https://www.linkedin.com/company/wafflestudio/" target="_blank" rel="noopener noreferrer" aria-label="WaffleStudio link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Sep 2023 – Jul 2025
   * Provided Kotlin Springboot training to fellow students and collaboratively developed an internal community service platform
   * Participated in the development of a software solution to provide resource-efficient isolation environments within computer systems
   * Managed system components and resources in Kubernetes infrastructure
 
-* **SNU LikeLion**, Mar 2024 – Current
+* **SNU LikeLion** <a href="https://snulion.com" target="_blank" rel="noopener noreferrer" aria-label="SNU LikeLion link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Mar 2024 – Current
   * Educated students about infrastructure and backend development as part of a tech entrepreneurship club, SNU LiekLion
   * Held several ideathons to find real problems that can be solved by technological solutions, and based on the results, built services quickly to see how the market responds
   * Managed overall operations of the club as Administator

@@ -54,7 +54,7 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text"{% if page.collection == 'publications' or page.collection == 'portfolio' %} style="margin-top: 2em;"{% endif %}>
-        {% if page.collection == 'publications' or page.collection == 'portfolio' %}
+        {% if page.collection == 'publications' %}
         <div style="text-align: center; margin-bottom: 2em;">
           {% if page.header.image %}
             {% if page.header.image contains "://" %}
