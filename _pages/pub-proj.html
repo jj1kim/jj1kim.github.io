@@ -43,17 +43,34 @@ author_profile: true
 </div>
 
 <style>
-  /* Portfolio grid: 3 items per row - override everything */
+  /* Portfolio grid: fix image size first, then let card adjust */
   .grid__item .archive__item--portfolio {
     float: left !important;
     clear: none !important;
     margin-left: 0 !important;
     margin-right: 1.5em !important;
     margin-bottom: 2em !important;
+    box-sizing: border-box !important;
+    /* Card width: 3 items per row with spacing */
     width: calc((100% - 3em) / 3) !important;
     min-width: calc((100% - 3em) / 3) !important;
     max-width: calc((100% - 3em) / 3) !important;
-    box-sizing: border-box !important;
+  }
+  
+  /* Image: fixed size - card adjusts to fit */
+  .grid__item .archive__item--portfolio .archive__item-teaser {
+    margin: 0 !important;
+    padding: 0.5em !important;
+    padding-bottom: 0 !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  
+  .grid__item .archive__item--portfolio .archive__item-teaser img {
+    width: 100% !important;
+    height: 350px !important;
+    display: block !important;
+    object-fit: cover !important;
   }
   
   .grid__item .archive__item--portfolio:nth-child(3n) {
@@ -78,18 +95,6 @@ author_profile: true
     color: #fff !important;
   }
   
-  /* Larger image */
-  .grid__item .archive__item--portfolio .archive__item-teaser {
-    margin: 0.5em !important;
-    margin-bottom: 0 !important;
-    width: calc(100% - 1em) !important;
-  }
-  
-  .grid__item .archive__item--portfolio .archive__item-teaser img {
-    min-height: 250px !important;
-    object-fit: cover !important;
-  }
-  
   @media (max-width: 768px) {
     .grid__item .archive__item--portfolio {
       width: calc((100% - 1.5em) / 2) !important;
@@ -112,6 +117,10 @@ author_profile: true
     
     .grid__item .archive__item--portfolio:nth-child(3n+1) {
       clear: none !important;
+    }
+    
+    .grid__item .archive__item--portfolio .archive__item-teaser img {
+      height: 250px !important;
     }
   }
 </style>

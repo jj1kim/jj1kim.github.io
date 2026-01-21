@@ -31,10 +31,10 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}{% if post.collection == 'portfolio' and include.type == 'grid' %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork"{% if post.collection == 'portfolio' and include.type == 'grid' %} style="float: left !important; clear: none !important; margin-left: 0 !important; margin-right: 1.5em !important; margin-bottom: 2em !important; width: calc((100% - 3em) / 3) !important; box-sizing: border-box !important;"{% endif %}>
+  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}{% if post.collection == 'portfolio' and include.type == 'grid' %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if post.collection == 'portfolio' and include.type == 'grid' %}
       <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="archive__item-link" style="display: block; text-decoration: none; color: inherit;">
-        <div class="archive__item-teaser" style="margin: 0.5em; margin-bottom: 0; width: calc(100% - 1em); overflow: hidden;">
+        <div class="archive__item-teaser" style="margin: 0; padding: 0.5em; padding-bottom: 0;">
           <img src=
             {% if teaser contains "://" %}
               "{{ teaser }}"
@@ -43,9 +43,9 @@
             {% else %}
               "{{ base_path }}/images/{{ teaser }}"
             {% endif %}
-            alt="{{ title }}" style="width: 100%; height: auto; display: block; min-height: 200px; object-fit: cover;">
+            alt="{{ title }}" style="width: 100%; height: 300px; display: block; object-fit: cover;">
         </div>
-        <h2 class="archive__item-title" itemprop="headline" style="margin: 1em; margin-top: 0.75em; margin-bottom: 0.75em; text-align: center; font-size: 1.25em; text-decoration: none !important;">{{ title }}</h2>
+        <h2 class="archive__item-title" itemprop="headline" style="margin: 0.75em; margin-top: 0.75em; text-align: center; font-size: 1.25em; text-decoration: none !important;">{{ title }}</h2>
       </a>
     {% elsif include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
