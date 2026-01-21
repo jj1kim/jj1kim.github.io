@@ -212,6 +212,18 @@
 
   @include breakpoint($small) {
     @include gallery(5 of 10);
+    
+    // Exclude portfolio grid items from gallery mixin
+    .portfolio-grid & {
+      width: auto !important;
+      min-width: auto !important;
+      max-width: none !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      float: none !important;
+      clear: none !important;
+    }
+    
     .archive__item-teaser {
       max-height: 200px;
     }
@@ -221,6 +233,17 @@
     margin-left: 0; /* reset before mixin does its thing*/
     margin-right: 0; /* reset before mixin does its thing*/
     @include gallery(2.5 of 10);
+    
+    // Exclude portfolio grid items from gallery mixin
+    .portfolio-grid & {
+      width: auto !important;
+      min-width: auto !important;
+      max-width: none !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      float: none !important;
+      clear: none !important;
+    }
     
     // Exclude portfolio from gallery mixin effects
     .archive__item--portfolio {
@@ -319,15 +342,20 @@
   }
 }
 
-// Portfolio grid: remove width restrictions - let card adjust to image size
+// Portfolio grid: remove width restrictions and float - use flexbox instead
+.portfolio-grid .grid__item {
+  float: none !important;
+  clear: none !important;
+  margin: 0 !important;
+  display: flex !important;
+}
+
 .grid__item .archive__item--portfolio,
 .archive .grid__item .archive__item--portfolio,
 #main .grid__item .archive__item--portfolio {
-  float: left !important;
+  float: none !important;
   clear: none !important;
-  margin-left: 0 !important;
-  margin-right: 2em !important;
-  margin-bottom: 2em !important;
+  margin: 0 !important;
   box-sizing: border-box !important;
   display: block !important;
   /* Remove all width restrictions - let it adjust to content */
@@ -339,9 +367,7 @@
     width: auto !important;
     min-width: auto !important;
     max-width: none !important;
-    margin-right: 2em !important;
-    margin-bottom: 2em !important;
-    margin-left: 0 !important;
+    margin: 0 !important;
     padding: 0 !important;
   }
 
@@ -349,9 +375,7 @@
     width: auto !important;
     min-width: auto !important;
     max-width: none !important;
-    margin-right: 2em !important;
-    margin-left: 0 !important;
-    margin-bottom: 2em !important;
+    margin: 0 !important;
     padding: 0 !important;
   }
 }
