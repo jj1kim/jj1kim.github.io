@@ -2,6 +2,18 @@
 
 {% if post.header.teaser %}
   {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% elsif post.collection == 'portfolio' and post.excerpt %}
+  {% assign excerpt_img = post.excerpt | split: '<img' %}
+  {% if excerpt_img.size > 1 %}
+    {% assign img_tag = excerpt_img[1] | split: '>' | first %}
+    {% assign img_src = img_tag | split: "src='" | last | split: "'" | first %}
+    {% if img_src == "" %}
+      {% assign img_src = img_tag | split: 'src="' | last | split: '"' | first %}
+    {% endif %}
+    {% capture teaser %}{{ img_src }}{% endcapture %}
+  {% else %}
+    {% assign teaser = site.teaser %}
+  {% endif %}
 {% else %}
   {% assign teaser = site.teaser %}
 {% endif %}
@@ -13,8 +25,23 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
-    {% if include.type == "grid" and teaser %}
+  <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}{% if post.collection == 'portfolio' and include.type == 'grid' %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if post.collection == 'portfolio' and include.type == 'grid' %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="archive__item-link">
+        {% if teaser %}
+          <div class="archive__item-teaser">
+            <img src=
+              {% if teaser contains "://" %}
+                "{{ teaser }}"
+              {% else %}
+                "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+              {% endif %}
+              alt="{{ title }}">
+          </div>
+        {% endif %}
+        <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
+      </a>
+    {% elsif include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
           {% if teaser contains "://" %}
@@ -26,6 +53,7 @@
       </div>
     {% endif %}
 
+    {% unless post.collection == 'portfolio' and include.type == 'grid' %}
     <div{% if post.collection == 'publications' and include.type != 'grid' %} class="archive__item-content" style="flex: 1;"{% endif %}>
     <h2 class="archive__item-title" itemprop="headline">
       {% if post.link %}
@@ -34,6 +62,7 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
+    {% endunless %}
     
     {% if post.read_time %}
       <p class="page__meta" style="margin-bottom: 0;"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
@@ -53,13 +82,15 @@
          </p>
         {% endif %}
 
-    {% unless post.collection == 'publications' %}
+    {% unless post.collection == 'publications' or post.collection == 'portfolio' %}
       {% if post.excerpt and site.read_more != 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | replace: '<img', '<img style="max-width: 35%; height: auto; display: block; margin-top: 1.25em; margin-bottom: 0.5em; border-radius: 4px;"' }}</p>
       {% elsif post.excerpt and site.read_more == 'enabled' %}
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' | replace: '<img', '<img style="max-width: 35%; height: auto; display: block; margin-top: 1.25em; margin-bottom: 0.5em; border-radius: 4px;"' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
       {% endif %}
     {% endunless %}
+    {% unless post.collection == 'portfolio' and include.type == 'grid' %}
     </div>
+    {% endunless %}
   </article>
 </div>
