@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "SGS"
+excerpt: "A scalable and efficient system for large-scale data processing and analysis. The project focuses on optimizing performance and resource utilization.<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+SGS is a comprehensive solution designed for handling large-scale data processing tasks. The system provides efficient resource management and optimized performance for complex computational workloads. This project demonstrates advanced system design principles and practical implementation of distributed computing concepts. 
