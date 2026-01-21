@@ -51,6 +51,7 @@ author_profile: true
     justify-content: flex-start;
     align-items: flex-start;
     overflow: visible !important;
+    padding-bottom: 1em; /* Extra space for shadows at the bottom */
   }
   
   /* Ensure grid items don't use float in portfolio grid */
@@ -84,7 +85,7 @@ author_profile: true
     border-left: 1px solid #999 !important;
     border-radius: 0; /* Sharp corners */
     background-color: var(--global-bg-color);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     cursor: pointer;
     /* Card adjusts to content size */
     width: 100%;
@@ -92,14 +93,14 @@ author_profile: true
     max-width: none;
     overflow: visible !important;
     box-sizing: border-box !important;
-    /* Remove shadow */
-    box-shadow: none;
-    margin-bottom: 0;
+    /* Add shadow below the card */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 8px; /* Space for shadow */
   }
 
   .portfolio-card:hover {
     transform: translateY(-4px);
-    box-shadow: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
   /* Dark mode: lighter border */
@@ -109,6 +110,12 @@ author_profile: true
     border-right: 1px solid #ccc !important;
     border-bottom: 1px solid #ccc !important;
     border-left: 1px solid #ccc !important;
+    /* Add shadow below the card */
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+
+  html[data-theme="dark"] .portfolio-card:hover {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
   }
 
   /* Image container: padding from border */
@@ -138,8 +145,8 @@ author_profile: true
   .portfolio-card-title {
     margin: 0.75em 1em;
     margin-top: 0.75em;
-    margin-bottom: 0.75em;
-    padding-bottom: 0; /* Ensure no padding cuts border */
+    margin-bottom: 0; /* Remove bottom margin to prevent border cutting */
+    padding-bottom: 0.75em; /* Use padding instead to maintain spacing */
     text-align: center;
     font-size: 1.15em;
     font-weight: 500;
@@ -147,6 +154,7 @@ author_profile: true
     color: #000;
     border-bottom: none !important;
     overflow: visible; /* Allow border to be visible */
+    display: block;
   }
   
   /* Remove underline from title when inside link */
