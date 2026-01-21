@@ -57,18 +57,20 @@ author_profile: true
     max-width: calc((100% - 3em) / 3) !important;
   }
   
-  /* Image: fixed size - card adjusts to fit */
+  /* Image: fixed size - 500px x 300px - card adjusts to fit */
   .grid__item .archive__item--portfolio .archive__item-teaser {
     margin: 0 !important;
     padding: 0.5em !important;
     padding-bottom: 0 !important;
-    width: 100% !important;
+    width: auto !important;
     overflow: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
   }
   
   .grid__item .archive__item--portfolio .archive__item-teaser img {
-    width: 100% !important;
-    height: 350px !important;
+    width: 500px !important;
+    height: 300px !important;
     display: block !important;
     object-fit: cover !important;
   }
@@ -120,7 +122,8 @@ author_profile: true
     }
     
     .grid__item .archive__item--portfolio .archive__item-teaser img {
-      height: 250px !important;
+      width: 500px !important;
+      height: 300px !important;
     }
   }
 </style>
