@@ -230,15 +230,6 @@
       display: block;
       font-size: $type-size-6;
     }
-    
-    // Portfolio items: reset gallery mixin effects
-    .archive__item--portfolio {
-      // Gallery mixin creates specific width/margin - override it
-      width: auto !important;
-      margin-left: 0 !important;
-      margin-right: auto !important;
-      float: none !important;
-    }
   }
 
   // Portfolio card style
@@ -318,19 +309,29 @@
   }
 }
 
-// Portfolio grid: 3 items per row - override gallery mixin completely
-.grid__item .archive__item--portfolio {
+// Portfolio grid: 3 items per row - completely override gallery mixin
+// Must be more specific than .grid__item to override gallery
+.grid__item .archive__item--portfolio,
+.archive .grid__item .archive__item--portfolio,
+#main .grid__item .archive__item--portfolio {
   float: left !important;
   clear: none !important;
   margin-left: 0 !important;
+  margin-right: 2em !important;
+  margin-bottom: 2em !important;
+  box-sizing: border-box !important;
+  display: block !important;
   
   @include breakpoint($medium) {
-    // Exact width for 3 items per row with 2em spacing
+    // Exact width for 3 items per row: (100% - 2 gaps of 2em each) / 3
+    // Make sure it's large enough - 3 items per row with minimal spacing
     width: calc((100% - 4em) / 3) !important;
+    min-width: calc((100% - 4em) / 3) !important;
+    max-width: calc((100% - 4em) / 3) !important;
     margin-right: 2em !important;
     margin-bottom: 2em !important;
     margin-left: 0 !important;
-    max-width: none !important;
+    padding: 0 !important;
     
     &:nth-child(3n) {
       margin-right: 0 !important;
@@ -345,10 +346,12 @@
   @include breakpoint($small) {
     // 2 items per row on small screens
     width: calc((100% - 2em) / 2) !important;
+    min-width: calc((100% - 2em) / 2) !important;
+    max-width: calc((100% - 2em) / 2) !important;
     margin-right: 2em !important;
     margin-left: 0 !important;
     margin-bottom: 2em !important;
-    max-width: none !important;
+    padding: 0 !important;
     
     &:nth-child(2n) {
       margin-right: 0 !important;
@@ -358,6 +361,13 @@
       clear: left !important;
       margin-left: 0 !important;
     }
+  }
+}
+
+// Ensure portfolio grid container starts from left
+.archive {
+  .grid__item:first-child .archive__item--portfolio {
+    margin-left: 0 !important;
   }
 }
 
