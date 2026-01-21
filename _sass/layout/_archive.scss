@@ -230,6 +230,15 @@
       display: block;
       font-size: $type-size-6;
     }
+    
+    // Portfolio items: reset gallery mixin effects
+    .archive__item--portfolio {
+      // Gallery mixin creates specific width/margin - override it
+      width: auto !important;
+      margin-left: 0 !important;
+      margin-right: auto !important;
+      float: none !important;
+    }
   }
 
   // Portfolio card style
@@ -309,18 +318,19 @@
   }
 }
 
-// Portfolio grid: 3 items per row - override gallery mixin
+// Portfolio grid: 3 items per row - override gallery mixin completely
 .grid__item .archive__item--portfolio {
   float: left !important;
-  margin-left: 0 !important;
   clear: none !important;
+  margin-left: 0 !important;
   
   @include breakpoint($medium) {
-    // Gallery mixin override: exact width for 3 items with spacing
-    width: calc((100% - 4em) / 3) !important; // 3 items, 2 gaps of 2em each
+    // Exact width for 3 items per row with 2em spacing
+    width: calc((100% - 4em) / 3) !important;
     margin-right: 2em !important;
-    margin-bottom: 2em;
+    margin-bottom: 2em !important;
     margin-left: 0 !important;
+    max-width: none !important;
     
     &:nth-child(3n) {
       margin-right: 0 !important;
@@ -333,9 +343,12 @@
   }
 
   @include breakpoint($small) {
-    width: calc((100% - 2em) / 2) !important; // 2 items, 1 gap of 2em
+    // 2 items per row on small screens
+    width: calc((100% - 2em) / 2) !important;
     margin-right: 2em !important;
     margin-left: 0 !important;
+    margin-bottom: 2em !important;
+    max-width: none !important;
     
     &:nth-child(2n) {
       margin-right: 0 !important;

@@ -34,7 +34,7 @@
   <article class="archive__item{% if post.collection == 'publications' and include.type != 'grid' %} archive__item--publication{% endif %}{% if post.collection == 'portfolio' and include.type == 'grid' %} archive__item--portfolio{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if post.collection == 'portfolio' and include.type == 'grid' %}
       <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="archive__item-link">
-        <div class="archive__item-teaser">
+        <div class="archive__item-teaser" style="margin: 1em; margin-bottom: 0;">
           <img src=
             {% if teaser contains "://" %}
               "{{ teaser }}"
@@ -43,7 +43,7 @@
             {% else %}
               "{{ base_path }}/images/{{ teaser }}"
             {% endif %}
-            alt="{{ title }}">
+            alt="{{ title }}" style="width: 100%; height: auto; display: block;">
         </div>
         <h2 class="archive__item-title" itemprop="headline">{{ title }}</h2>
       </a>
