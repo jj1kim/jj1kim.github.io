@@ -5,7 +5,7 @@ layout: default
 {% include base_path %}
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
-  {% unless page.collection == 'publications' %}
+  {% unless page.collection == 'publications' or page.collection == 'portfolio' %}
     {% include page__hero.html %}
   {% endunless %}
 {% endif %}
@@ -53,8 +53,8 @@ layout: default
         </header>
       {% endunless %}
 
-      <section class="page__content" itemprop="text"{% if page.collection == 'publications' %} style="margin-top: 2em;"{% endif %}>
-        {% if page.collection == 'publications' %}
+      <section class="page__content" itemprop="text"{% if page.collection == 'publications' or page.collection == 'portfolio' %} style="margin-top: 2em;"{% endif %}>
+        {% if page.collection == 'publications' or page.collection == 'portfolio' %}
         <div style="text-align: center; margin-bottom: 2em;">
           {% if page.header.image %}
             {% if page.header.image contains "://" %}
@@ -98,7 +98,7 @@ layout: default
         {% if page.link %}<div style="margin-top: 1em;"><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      <footer class="page__meta"{% if page.collection == 'publications' %} style="margin-top: 0 !important; padding-top: 0;"{% endif %}>
+      <footer class="page__meta"{% if page.collection == 'publications' or page.collection == 'portfolio' %} style="margin-top: 0 !important; padding-top: 0;"{% endif %}>
         {% if site.data.ui-text[site.locale].meta_label %}
           <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
         {% endif %}
@@ -106,7 +106,7 @@ layout: default
         {% include post-share-link.html %}
       </footer>
 
-      {% if page.share and page.collection != 'posts' and page.collection != 'publications' %}{% include social-share.html %}{% endif %}
+      {% if page.share and page.collection != 'posts' and page.collection != 'publications' and page.collection != 'portfolio' %}{% include social-share.html %}{% endif %}
 
       {% include post_pagination.html %}
     </div>

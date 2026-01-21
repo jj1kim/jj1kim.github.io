@@ -8,6 +8,10 @@
   <nav class="pagination" style="text-align: center;">
     <a href="{{ base_path }}/pub-proj/" class="pagination--pager">Back to List</a>
   </nav>
+{% elsif page.collection == 'portfolio' %}
+  <nav class="pagination" style="text-align: center;">
+    <a href="{{ base_path }}/pub-proj/" class="pagination--pager">Back to List</a>
+  </nav>
 {% elsif page.previous or page.next %}
   <nav class="pagination">
     {% if page.previous %}
