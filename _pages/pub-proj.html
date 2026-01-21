@@ -36,7 +36,66 @@ author_profile: true
 
 <h2>Projects</h2><hr />
 
+<div style="clear: both; overflow: hidden;">
 {% for post in site.portfolio %}
   {% include archive-single.html type="grid" %}
 {% endfor %}
+</div>
+
+<style>
+  /* Portfolio grid: 3 items per row - override everything */
+  .grid__item .archive__item--portfolio {
+    float: left !important;
+    clear: none !important;
+    margin-left: 0 !important;
+    margin-right: 2em !important;
+    margin-bottom: 2em !important;
+    width: calc((100% - 4em) / 3) !important;
+    min-width: calc((100% - 4em) / 3) !important;
+    max-width: calc((100% - 4em) / 3) !important;
+    box-sizing: border-box !important;
+  }
+  
+  .grid__item .archive__item--portfolio:nth-child(3n) {
+    margin-right: 0 !important;
+  }
+  
+  .grid__item .archive__item--portfolio:nth-child(3n+1) {
+    clear: left !important;
+    margin-left: 0 !important;
+  }
+  
+  /* Dark mode title color */
+  html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title {
+    color: #fff !important;
+  }
+  
+  html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title a {
+    color: #fff !important;
+  }
+  
+  @media (max-width: 768px) {
+    .grid__item .archive__item--portfolio {
+      width: calc((100% - 2em) / 2) !important;
+      min-width: calc((100% - 2em) / 2) !important;
+      max-width: calc((100% - 2em) / 2) !important;
+    }
+    
+    .grid__item .archive__item--portfolio:nth-child(2n) {
+      margin-right: 0 !important;
+    }
+    
+    .grid__item .archive__item--portfolio:nth-child(2n+1) {
+      clear: left !important;
+    }
+    
+    .grid__item .archive__item--portfolio:nth-child(3n) {
+      margin-right: 2em !important;
+    }
+    
+    .grid__item .archive__item--portfolio:nth-child(3n+1) {
+      clear: none !important;
+    }
+  }
+</style>
 
