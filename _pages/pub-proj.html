@@ -43,7 +43,7 @@ author_profile: true
 </div>
 
 <style>
-  /* Portfolio grid: fix image size first, then let card adjust */
+  /* Portfolio grid: Image size first (500px x 300px), card adjusts */
   .grid__item .archive__item--portfolio {
     float: left !important;
     clear: none !important;
@@ -51,13 +51,13 @@ author_profile: true
     margin-right: 1.5em !important;
     margin-bottom: 2em !important;
     box-sizing: border-box !important;
-    /* Card width: 3 items per row with spacing */
-    width: calc((100% - 3em) / 3) !important;
-    min-width: calc((100% - 3em) / 3) !important;
-    max-width: calc((100% - 3em) / 3) !important;
+    /* Remove width constraints - let card adjust to image size */
+    width: auto !important;
+    min-width: auto !important;
+    max-width: none !important;
   }
   
-  /* Image: fixed size - 500px x 300px - card adjusts to fit */
+  /* Image: fixed size 500px x 300px - highest priority */
   .grid__item .archive__item--portfolio .archive__item-teaser {
     margin: 0 !important;
     padding: 0.5em !important;
@@ -71,12 +71,13 @@ author_profile: true
   .grid__item .archive__item--portfolio .archive__item-teaser img {
     width: 500px !important;
     height: 300px !important;
+    min-width: 500px !important;
+    max-width: 500px !important;
+    min-height: 300px !important;
+    max-height: 300px !important;
     display: block !important;
     object-fit: cover !important;
-  }
-  
-  .grid__item .archive__item--portfolio:nth-child(3n) {
-    margin-right: 0 !important;
+    flex-shrink: 0 !important;
   }
   
   .grid__item .archive__item--portfolio:nth-child(3n+1) {
@@ -84,9 +85,10 @@ author_profile: true
     margin-left: 0 !important;
   }
   
-  /* Title color - light mode black, dark mode white */
+  /* Title: smaller font size */
   .grid__item .archive__item--portfolio .archive__item-title {
     color: #000 !important;
+    font-size: 1.1em !important;
   }
   
   html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title {
@@ -95,36 +97,6 @@ author_profile: true
   
   html[data-theme="dark"] .grid__item .archive__item--portfolio .archive__item-title a {
     color: #fff !important;
-  }
-  
-  @media (max-width: 768px) {
-    .grid__item .archive__item--portfolio {
-      width: calc((100% - 1.5em) / 2) !important;
-      min-width: calc((100% - 1.5em) / 2) !important;
-      max-width: calc((100% - 1.5em) / 2) !important;
-      margin-right: 1.5em !important;
-    }
-    
-    .grid__item .archive__item--portfolio:nth-child(2n) {
-      margin-right: 0 !important;
-    }
-    
-    .grid__item .archive__item--portfolio:nth-child(2n+1) {
-      clear: left !important;
-    }
-    
-    .grid__item .archive__item--portfolio:nth-child(3n) {
-      margin-right: 1.5em !important;
-    }
-    
-    .grid__item .archive__item--portfolio:nth-child(3n+1) {
-      clear: none !important;
-    }
-    
-    .grid__item .archive__item--portfolio .archive__item-teaser img {
-      width: 500px !important;
-      height: 300px !important;
-    }
   }
 </style>
 
