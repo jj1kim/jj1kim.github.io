@@ -231,6 +231,72 @@
       font-size: $type-size-6;
     }
   }
+
+  // Portfolio card style
+  .archive__item--portfolio {
+    border: 1px solid var(--global-border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: var(--global-bg-color);
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .archive__item-link {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .archive__item-teaser {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.2s ease;
+      }
+    }
+
+    &:hover .archive__item-teaser img {
+      transform: scale(1.05);
+    }
+
+    .archive__item-title {
+      margin: 1em;
+      margin-top: 0.75em;
+      margin-bottom: 0.75em;
+      text-align: center;
+      font-size: $type-size-5;
+      
+      a {
+        text-decoration: none;
+        color: var(--global-text-color);
+        
+        &:hover {
+          color: var(--global-link-color);
+        }
+      }
+    }
+  }
+}
+
+// Portfolio grid: 3 items per row
+.grid__item .archive__item--portfolio {
+  @include breakpoint($medium) {
+    @include gallery(3.33 of 10);
+    margin-bottom: 2em;
+  }
+
+  @include breakpoint($small) {
+    @include gallery(6 of 10);
+  }
 }
 
 
