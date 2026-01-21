@@ -266,21 +266,23 @@
   }
 
   // Portfolio card style
+  // Remove border here - it's handled by .portfolio-card in pub-proj.html
   .archive__item--portfolio {
-    border: 1px solid #000 !important;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    background-color: var(--global-bg-color);
+    border: none !important;
+    border-radius: 0;
+    overflow: visible;
+    transition: none;
+    background-color: transparent;
 
-    // Dark mode: lighter border
+    // Dark mode: no border here
     html[data-theme="dark"] & {
-      border-color: #ccc !important;
+      border: none !important;
     }
 
+    // Remove hover effects - handled by .portfolio-card
     &:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transform: none;
+      box-shadow: none;
     }
 
     .archive__item-link {
