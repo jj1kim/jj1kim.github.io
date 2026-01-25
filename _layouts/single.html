@@ -29,12 +29,12 @@ layout: default
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
           {% if page.title %}
-            <h1 class="page__title" itemprop="headline" style="{% if page.collection == 'portfolio' %}margin-bottom: 0.1em;{% endif %}">
-              {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% if page.collection == 'portfolio' and page.code_url %} <a href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer" style="font-size: 0.4em; font-weight: normal; color: var(--global-text-color-light); text-decoration: none; vertical-align: middle;">[Code]</a>{% endif %}
+            <h1 class="page__title" itemprop="headline" style="{% if page.collection == 'portfolio' %}margin-bottom: 0.3em;{% endif %}">
+              {{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}{% if page.collection == 'portfolio' and page.code_url %} <a href="{{ page.code_url }}" target="_blank" rel="noopener noreferrer" style="font-size: 0.5em; font-weight: normal; color: var(--global-text-color-light); text-decoration: none; vertical-align: middle;">[Code]</a>{% endif %}
             </h1>
           {% endif %}
           {% if page.collection == 'portfolio' and page.period %}
-            <p style="font-size: 0.85em; color: var(--global-text-color-light); margin-top: 0; margin-bottom: 0.5em;">{{ page.period }}</p>
+            <p style="font-size: 0.85em; color: var(--global-text-color-light); margin-top: 0; margin-bottom: 0.5em;"><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.period }}</p>
           {% endif %}
           {% if page.read_time %}
             <p class="page__meta" style="margin-bottom: 0;"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
