@@ -1,9 +1,12 @@
 ---
 title: "Carewise"
-excerpt: "A healthcare management system designed to improve patient care coordination and streamline medical workflows. The platform focuses on accessibility and reliability.<br/><img src='/images/500x300.png'>"
 collection: portfolio
+period: "2024.06 - 2024.07"
+code_url: "https://github.com/jj1kim/CareWise"
 header:
   teaser: carewise.jpg
 ---
 
-Carewise is a healthcare technology solution that facilitates better coordination between healthcare providers and patients. The system includes features for appointment scheduling, medical record management, and communication tools. The project demonstrates understanding of healthcare domain requirements, data security considerations, and user interface design principles. The platform prioritizes reliability and ease of use for both medical professionals and patients.
+Carewise is a web-application project for young adults, who are unfamiliar with clothing management. We identified key pain points in clothing care for young adults living alone and proposed AI as a solution to information scarcity.
+After that, we fine-tuned a language foundation model to deliver expert-level clothing care advice and developed a web service that analyzes care labels to generate personalized maintenance tips. Also, we designed and deployed a low-latency web infrastructure, enabling the service to scale effectively.
+This project carried out as part of SNU Likelion, the student club for technological entrepreneurs.
