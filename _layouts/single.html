@@ -54,20 +54,6 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text"{% if page.collection == 'publications' or page.collection == 'portfolio' %} style="margin-top: 2em;"{% endif %}>
-        {% if page.collection == 'portfolio' %}
-        <div style="margin-bottom: 1.5em;">
-          {% if page.period %}
-          <p style="font-size: 0.85em; color: var(--global-text-color-light); margin-bottom: 0.75em;">
-            <i class="fa fa-calendar" aria-hidden="true"></i> {{ page.period }}
-          </p>
-          {% endif %}
-          {% if page.code_url %}
-          <a href="{{ page.code_url }}" class="btn btn--primary" style="margin-right: 0.5em;" target="_blank" rel="noopener noreferrer">
-            <i class="fab fa-github" aria-hidden="true"></i> Code
-          </a>
-          {% endif %}
-        </div>
-        {% endif %}
         {% if page.collection == 'publications' %}
         <div style="text-align: center; margin-bottom: 2em;">
           {% if page.header.image %}
