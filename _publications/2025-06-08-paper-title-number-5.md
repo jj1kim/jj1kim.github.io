@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/layered-prefill
 date: 2025-10-09
 author: 'Gunjun Lee, <strong><u>Jiwon Kim</u></strong>, Jaiyoung Park, Younjoo Lee and Jung Ho Ahn'
-venue: 'arXiv preprint (under review for ICML'26)'
+venue: "arXiv preprint (under review for ICML'26)"
 paperurl: 'https://arxiv.org/abs/2510.08055'
 citation: 'Lee, Gunjun, et al. "From Tokens to Layers: Redefining Stall-Free Scheduling for LLM Serving with Layered Prefill." arXiv preprint arXiv:2510.08055 (2025).'
 header:
