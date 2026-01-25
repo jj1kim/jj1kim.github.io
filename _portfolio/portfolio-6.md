@@ -1,9 +1,15 @@
 ---
 title: "Hodu"
-excerpt: "A user-friendly application designed to enhance productivity and streamline workflow management. The project emphasizes intuitive design and robust functionality.<br/><img src='/images/500x300.png'>"
 collection: portfolio
+period: "2024.07 - 2024.09"
+code_url: "https://github.com/wafflestudio/hodu"
 header:
   teaser: hodu.png
 ---
 
-Hodu is a comprehensive application developed to address common productivity challenges. The project integrates multiple features including task management, scheduling, and collaboration tools. The development process emphasized user experience design, performance optimization, and cross-platform compatibility. The application demonstrates practical software engineering skills and attention to user needs.
+Hodu is a secure, resource-efficient, and high-speed coding test grading server using custom lightweight isolation techniques. Based on open-source project “isolate” (https://github.com/ioi/isolate), we built custom sandbox to safely run untrusted executables. Also, for efficient sandbox management, we developed an internal sandbox manager maintains a prewarmed pool of isolated environments to improve performance and scalability. The whole project was developed with Rust, and we provisioned API with GRPC. In this project, we applyed Rust-specific performance optimizations and thread pool designs to safely and scalably handle sudden traffic spikes.
+This project carried out as part of WaffleStudio, the student club of web developers in Seoul National University.
+
+
+
+
