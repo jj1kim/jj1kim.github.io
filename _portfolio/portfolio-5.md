@@ -2,7 +2,7 @@
 title: "CAD-CNN"
 collection: portfolio
 period: "2025.04 - 2025.06"
-code_url: "https://jj1kim.github.io/portfolio/portfolio-5/"
+code_url: "/portfolio/portfolio-5/"
 header:
   teaser: CAD-CNN.png
 ---
