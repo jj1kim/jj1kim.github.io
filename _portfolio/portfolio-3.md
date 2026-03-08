@@ -2,7 +2,7 @@
 title: "ICM-NPU"
 collection: portfolio
 period: "2025.09 - 2025.10"
-code_url: "https://jj1kim.github.io/portfolio/portfolio-3/"
+code_url: "/portfolio/portfolio-3/"
 header:
   teaser: ICM-NPU.png
 ---

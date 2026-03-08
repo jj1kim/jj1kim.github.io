@@ -2,7 +2,7 @@
 title: "SGS"
 collection: portfolio
 period: "2023.08 - Present"
-code_url: "https://jj1kim.github.io/portfolio/portfolio-1/"
+code_url: "/portfolio/portfolio-1/"
 header:
   teaser: 500x300.png
 ---
