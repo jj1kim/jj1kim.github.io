@@ -5,7 +5,7 @@ permalink: /posts/2026/05/03/bluemarble
 tags:
   - Thoughts
   - Computer
-excerpt: 'P2P 웹 기반의 부루마블을 클로드와 함께 직접 만들어본 개발 회고'
+excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 ---
 <div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">한국어</div>
 
