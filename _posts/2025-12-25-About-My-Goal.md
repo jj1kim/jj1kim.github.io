@@ -6,6 +6,7 @@ tags:
   - Thoughts
   - Computer
 excerpt: 'A few stories about my dream and goal.'
+bilingual: true
 ---
 <div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">한국어</div>
 

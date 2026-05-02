@@ -1,7 +1,13 @@
 {% if post.read_time %}
   {% assign words = post.content | strip_html | number_of_words %}
+  {% if post.bilingual %}
+    {% assign words = words | divided_by: 2 %}
+  {% endif %}
 {% elsif page.read_time %}
   {% assign words = page.content | strip_html | number_of_words %}
+  {% if page.bilingual %}
+    {% assign words = words | divided_by: 2 %}
+  {% endif %}
 {% endif %}
 
 {% if site.words_per_minute %}
