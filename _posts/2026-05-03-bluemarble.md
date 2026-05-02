@@ -6,6 +6,7 @@ tags:
   - Thoughts
   - Computer
 excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
+bilingual: true
 ---
 <div style="display: inline-block; padding: 0.3em 0.7em; background-color: #f0f0f0; border-radius: 4px; font-weight: bold; margin: 1em 0; font-size: 0.9em; color: #000 !important;">한국어</div>
 
@@ -17,12 +18,12 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 
 나이를 먹고 나니 저 또한 여유롭게만 시간을 보낼 수는 없게 되었고, 부루마블은 잠시 제 기억에서 잊혀갔습니다. 이 틈을 타서 부모님은 집에 있던 부루마블을 버리시더군요. 이 때문에 종종 부루마블이 생각나더라도, 집에 게임판이 없으니 도통 해볼 수가 없었습니다. 인터넷을 통해서 하는 방법을 찾아보려고 해도, 유일한 방법이자 그나마 비슷한 방법은 망할 대로 망해버린 모바일 게임 ＂모두의 마블＂을 하는 것뿐이었습니다. 사실상 인터넷을 통해서 할 방법도 없었던거죠.
 
-![모두의 마블 전설 짤](/images/modumarble.png)
-*(부루마블을 개발하면서 알았는데, 모두의 마블은 아직도 서비스하고 있다고 합니다...)*
+<p style="text-align: center;"><img src="/images/modumarble.png" alt="모두의 마블 전설 짤" style="width: 50%;"></p>
+<p style="text-align: center;"><em>(부루마블을 개발하면서 알았는데, 모두의 마블은 아직도 서비스하고 있다고 합니다...)</em></p>
 
 이러한 상황은 제게 탐탁지 않게 다가왔습니다. 주기적으로 돌아오는 부루마블에 대한 욕구(?)를 해소할 방법이 필요했거든요. 
 
-### 그래서 이번 5월 연휴에, Claude와 함께 직접 부루마블을 만들어보기로 했습니다.
+**<u>그래서 이번 5월 연휴에, Claude와 함께 직접 부루마블을 만들어보기로 했습니다.</u>**
 
 # 본론
 
@@ -38,7 +39,7 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 
 2번 규칙은 모바일, linux pc, mac pc, window pc 등 운영체제뿐만 아니라, 기기의 성능이 좀 떨어지더라도 누구나 게임을 즐길 수 있게 하려고 수립했습니다. 최근에 유행하는 모 SNS 앱이 게임을 해달라고 유저만 사용 가능했던지라 적잖이 아쉬움을 느꼈고, 이를 반면교사 삼았습니다.
 
-### Q. 누구나 게임을 즐길 수 있게 하려면 어떻게 해야 할까요?
+## Q. 누구나 게임을 즐길 수 있게 하려면 어떻게 해야 할까요?
 
 먼저, 게임의 실행 환경이 디바이스의 특정 기술 스택에 의존하지 않도록 구성되어야 합니다. 예를 들어서 리눅스에서만 쓸 수 있는 패키지를 쓰거나, 로컬 환경 자체에서 프로그램을 실행해야만 한다면 다른 환경의 사용자들은 게임을 즐기기 어려울 것입니다. 
 
@@ -53,7 +54,7 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 마지막으로 빼놓을 수 없는 것은 모바일 유저 등 다양한 화면 크기를 가진 유저들에 대한 반응형 구현이었는데요, React 프로젝트에 반응형 디자인을 구현하는 일은 기존에 웹 프론트엔드 개발을 했었던 제게는 큰 어려운 일이 아니었습니다. 이렇게 말하면 제가 다 한 것 같지만, 1번 규칙에 따라 저는 검수 위주로 하고 반응형 구현도 클로드의 몫이었습니다. 이것도 따지고 보면 브라우저 기반 게임 설계에 따른 이득이라고 할 수 있겠네요. 
 
 ![BlueMarble 릴리즈 페이지 ? 단일 HTML 파일](/images/bluemarble-release-capture.png)
-*(단일 HTML 파일이 유일한 구성 요소인 모습)*
+<p style="text-align: center;"><em>(단일 HTML 파일이 유일한 구성 요소인 모습)</em></p>
 
 이렇게 2번 규칙을 만족할 수 있었는데, 그다음은 3번 규칙이었습니다. ＂서비스의 지속가능성이 특정 인물의 노력에 기대는 구조＂라는건, 이때까지 개발되었다가 운영 중단된 수많은 온라인 게임들을 나타내는 표현입니다. 저는 이 게임이 제가 신경을 전혀 쓰지 못하더라도 많은 사람이 계속 즐길 수 있기를 바랐습니다. 제가 신경을 못 쓰면 서비스가 제대로 운영이 되지 못하거나, 망가지는 상황이 없어야 누구나 즐길 수 있는 게임이 되지 않겠습니까?
 
@@ -63,11 +64,11 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 
 여기서 딜레마가 발생합니다. 이 게임 서버를 유지하는 데에는 당연히 서버 대여 및 사용에 대한 비용도 나가고, 각종 이슈에 대해 끊임없이 관리를 해주어야 합니다. 서버비가 부족해서 운영을 종료한 서비스가 매우 많기도 하고, 서버를 관리하는 데 필요한 노력을 들이고 싶지도 않았습니다. 결국, ＂중앙화된 서버 없이 어떻게 통신과 게임 플레이를 구현할 것인가＂에 대한 문제로 귀결됩니다. 
 
-### Q. 중앙화된 서버 없이 어떻게 통신과 게임 플레이를 구현할까요?
+## Q. 중앙화된 서버 없이 어떻게 통신과 게임 플레이를 구현할까요?
 
 이 문제는 구체적으로 두 가지 문제로 나뉩니다. 첫 번째는 ＂중앙화된 서버 없이 어떻게 서로 통신하고 연결을 관리할 것인가＂에 대한 문제이고, 두 번째는 ＂통신이 가능한 상태에서 어떻게 서로의 상태를 동기화하면서도 정보를 한결같이 유지할 것인가＂에 대한 문제입니다. 상당히 기술적인 문제이고, 일반적인 컴퓨터 시스템과 네트워크 분야에서 자주 나오는 고민이기도 합니다.
 
-#### 첫 번째 문제 : 서버 없이 어떻게 서로 찾고 연결할까요?
+### 첫 번째 문제 : 서버 없이 어떻게 서로 찾고 연결할까요?
 
 사실 이 문제는 인터넷의 기본 구조와도 맞닿아 있습니다. 인터넷상에서 두 컴퓨터가 통신하려면 IP 주소로 서로 식별해야 하는데, 일반 사용자의 IP 는 통신사가 수시로 바꿔주고, 또 대개 NAT 뒤에 숨어 있어 외부에서 직접 찔러볼 수가 없습니다. 그래서 보통은 양쪽이 모두 접속할 수 있는 중간 지점에 의존합니다. 그게 바로 게임 서버이자, 카톡 서버이자, 디스코드 서버죠.
 
@@ -80,7 +81,7 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 이쯤 되니 문제가 좀 까다로워 보였습니다. 그런데 뜻밖에 좋은 트릭이 있었어요. **BitTorrent 라는 파일 공유 프로토콜이 이미 전 세계에 공용 ＂트래커＂ 들을 무료로 운영하고 있다** 는 점이었습니다. 트래커는 본래 ＂이 파일을 어떤 피어들이 갖고 있느냐＂ 를 물어보는 곳인데, 그 메커니즘은 사실 ＂어떤 식별자(룸 코드) 를 가진 피어들이 누구냐＂ 라는 일반적인 매칭 서비스로도 쓸 수 있습니다. 누군가가 이미 깔아둔 공용 인프라를 시그널링 채널로 빌려 쓰는 셈이죠.
 
 ![BitTorrent 트래커를 통한 P2P 시그널링 흐름](/images/p2p-signaling.png)
-*(처음 두 단계만 트래커를 잠깐 거치고, 이후 게임 트래픽은 모두 두 브라우저 간 직접 연결로 흐릅니다.)*
+<p style="text-align: center;"><em>(처음 두 단계만 트래커를 잠깐 거치고, 이후 게임 트래픽은 모두 두 브라우저 간 직접 연결로 흐릅니다.)</em></p>
 
 이 발상을 깔끔하게 추상화해놓은 라이브러리가 [**Trystero**](https://github.com/dmotz/trystero) 였습니다. 12자리 룸 코드만 친구에게 알려주면, Trystero 가 BitTorrent 트래커를 통해 같은 코드를 가진 피어들을 자동으로 매칭하고 SDP 교환까지 알아서 처리해줍니다. 사용자 입장에선 그냥 룸 코드를 입력하면 끝이고, 개발자 입장에선 시그널링을 위한 별도 서버를 운영할 필요가 없어집니다.
 
@@ -88,11 +89,7 @@ excerpt: 'A retrospective on developing a P2P web-based board game with Claude'
 
 이렇게 두 브라우저가 서로 만나는 길은 어찌어찌 만들어졌습니다. 그런데 막상 게임을 굴려보니, 한 가지 더 까다롭고 흥미로운 문제가 따라오더라고요. **새로고침을 누르거나 모바일이 잠깐 끊겼다 돌아온 사용자가 있을 때, ＂이 사람이 그 사람＂ 이라는 걸 어떻게 알아낼 것이냐는 문제** 였습니다.
 
-상황을 한번 그려봅시다. 게임이 한참 진행 중인데 누군가 무심코 새로고침을 눌렀습니다. WebRTC 연결이 끊기고, 다시 연결될 때 그 사람의 브라우저는 **새로운 임의 ID** 로 들어옵니다. 이건 WebRTC 의 기본 동작인데, 매 세션마다 ID 가 바뀌도록 설계되어 있습니다.
-
-호스트 입장에서는 처음 보는 사람이 룸에 들어온 거나 마찬가지입니다. 하지만 게임의 자연스러운 진행을 위해서는 이 사람을 원래 슬롯으로 다시 앉혀야 합니다. 새로 들어온 게 아니라 잠깐 끊겼다 돌아온 사람이라는 걸 시스템이 알아야 하는 거죠.
-
-서버가 있다면 로그인 세션 토큰으로 풀어낼 문제이지만, 우리는 그 서버가 없습니다. 그래서 다음과 같은 방식으로 풀었습니다.
+상황을 한번 그려봅시다. 게임이 한참 진행 중인데 누군가 무심코 새로고침을 눌렀습니다. WebRTC 연결이 끊기고, 다시 연결될 때 그 사람의 브라우저는 **새로운 임의 ID** 로 들어옵니다. 이건 WebRTC 의 기본 동작인데, 매 세션마다 ID 가 바뀌도록 설계되어 있습니다. 호스트 입장에서는 처음 보는 사람이 룸에 들어온 거나 마찬가지입니다. 하지만 게임의 자연스러운 진행을 위해서는 이 사람을 원래 슬롯으로 다시 앉혀야 합니다. 새로 들어온 게 아니라 잠깐 끊겼다 돌아온 사람이라는 걸 시스템이 알아야 하는 거죠. 서버가 있다면 로그인 세션 토큰으로 풀어낼 문제이지만, 우리는 그 서버가 없습니다. 그래서 다음과 같은 방식으로 풀었습니다.
 
 ```ts
 // 사용자가 처음 룸에 들어올 때 토큰을 만들어 localStorage 에 영구 저장.
@@ -110,7 +107,7 @@ transport.send(host, { type: ＇HELLO＇, token: myToken, name: ＇민수＇ })
 
 본질을 한 줄로 정리해보면 이렇습니다. **중앙 인증 서버 없이도, 클라이언트가 영속 토큰을 들고 다니면 서버에서처럼 identity 를 유지할 수 있다.** 모든 신뢰는 호스트 한 명의 메모리에 의존하지만 (호스트가 죽으면 매핑도 같이 사라집니다), 어차피 한 번의 게임 시간 동안만 유지되면 충분하니 그 정도면 충분합니다.
 
-#### 두번째 문제 : 모두의 상태를 어떻게 일관되게 유지할까요?
+### 두번째 문제 : 모두의 상태를 어떻게 일관되게 유지할까요?
 
 이 문제는 통신 채널 자체가 아니라, 채널이 열린 다음 모두의 게임 상태를 어떻게 일치시킬 것인가에 관한 것입니다. 게임 상태는 모두에게 똑같이 보여야 합니다. 예를 들어 A 의 화면에서는 ＂B가 호텔을 지었다＂ 라고 나오는데 B 의 화면에서는 ＂안 지었다＂ 라고 나오면 게임이 망가져버리니까요. P2P 환경에선 모두가 서로에게 메시지를 보낼 수 있고, 모두가 자기 컴퓨터에서 게임 로직을 돌릴 수도 있습니다. 그러면 자연스레 **＂누구의 결정을 진실로 인정할 것인가?＂**에 대한 질문이 생깁니다. 
 
@@ -123,7 +120,7 @@ transport.send(host, { type: ＇HELLO＇, token: myToken, name: ＇민수＇ })
 부루마블처럼 턴제 게임이라면 이 중 세 번째가 자연스럽게 들어맞습니다. 이미 ＂한 사람만 자기 차례에 행동한다＂는 게임 규칙 자체가, ＂권한자가 매 순간 한 명뿐＂ 이라는 분산 시스템 조건을 거저 만족시켜주거든요. 그래서 저는 **Authority rotation 방식** 으로 가기로 결정했습니다.
 
 ![권한자 broadcast → 검증 → 채택 흐름](/images/authority-broadcast.png)
-*(권한자 한 명이 reducer 를 돌리고 결과 state 를 broadcast, 나머지는 검증만 통과시키고 그대로 채택합니다.)*
+<p style="text-align: center;"><em>(권한자 한 명이 reducer 를 돌리고 결과 state 를 broadcast, 나머지는 검증만 통과시키고 그대로 채택합니다.)</em></p>
 
 구체적으로 동작하는 방식은 다음과 같습니다.
 
@@ -173,12 +170,12 @@ Ever since I was young, I have loved the board game "BlueMarble." I dare to assu
 
 As I grew older, I too could no longer spend my time leisurely, and BlueMarble was temporarily forgotten from my memory. Taking advantage of this, my parents got rid of the BlueMarble that was at home. Because of this, even when I occasionally remembered BlueMarble, I could not play it since there was no game board at home. Even when I tried to find a way to play it online, the only and most similar option was to play the utterly failed mobile game "Modu Marble." There was practically no way to play it online either.
 
-![A legendary meme of Modu Marble](/images/modumarble.png)
-*(I learned while developing BlueMarble that Modu Marble is still being serviced...)*
+<p style="text-align: center;"><img src="/images/modumarble.png" alt="A legendary meme of Modu Marble" style="width: 50%;"></p>
+<p style="text-align: center;"><em>(I learned while developing BlueMarble that Modu Marble is still being serviced...)</em></p>
 
 This situation did not sit well with me. I needed a way to satisfy the periodic urge(?) for BlueMarble that kept returning.
 
-### So during this May holiday, I decided to make BlueMarble myself with Claude.
+**<u>So during this May holiday, I decided to make BlueMarble myself with Claude.</u>**
 
 # Main
 
@@ -194,7 +191,7 @@ Actually, rule #1 was something that would naturally be followed even without ma
 
 Rule #2 was established so that anyone could enjoy the game regardless of operating system — whether mobile, Linux PC, Mac PC, or Windows PC — and even with somewhat lower-spec devices. I felt quite a bit of regret because a recently trending SNS app's game was only usable by certain users, and I took this as a lesson learned from a negative example.
 
-### Q. How can we ensure that anyone can enjoy the game?
+## Q. How can we ensure that anyone can enjoy the game?
 
 First, the game's execution environment must be configured so that it does not depend on the device's specific tech stack. For example, if it uses packages that can only be used on Linux, or if the program must be run in the local environment itself, users in other environments would have difficulty enjoying the game.
 
@@ -209,7 +206,7 @@ After developing it this way, the single HTML file ended up swelling to 8MB in s
 Lastly, what cannot be missed is the responsive implementation for users with various screen sizes, including mobile users. Implementing responsive design in a React project was not a major difficulty for me, since I had previously done web frontend development. While saying it like this makes it sound like I did everything, according to rule #1, I mainly did review work, and the responsive implementation was also Claude's job. This too could be considered a benefit of the browser-based game design.
 
 ![BlueMarble release page - a single HTML file](/images/bluemarble-release-capture.png)
-*(Showing that a single HTML file is the only component)*
+<p style="text-align: center;"><em>(Showing that a single HTML file is the only component)</em></p>
 
 This is how I was able to satisfy rule #2, and next came rule #3. The phrase "a structure where service sustainability depends on the efforts of a specific person" describes the countless online games that were developed but had their service discontinued. I wanted this game to be enjoyable for many people even if I could not pay attention to it at all. Wouldn't it become a game that anyone can enjoy only if there is no situation where the service fails to operate properly or breaks down because I cannot pay attention?
 
@@ -219,11 +216,11 @@ Most online games use their own game servers to enable users to communicate with
 
 Here lies a dilemma. Maintaining this game server naturally incurs costs for server rental and use, and constant management is required for various issues. Many services have ended due to insufficient server costs, and I did not want to put in the effort needed to manage a server. Ultimately, this comes down to the question, "How can we implement communication and gameplay without a centralized server?"
 
-### Q. How do we implement communication and gameplay without a centralized server?
+## Q. How do we implement communication and gameplay without a centralized server?
 
 This problem specifically divides into two problems. The first is "how do we communicate with each other and manage connections without a centralized server?", and the second is "how do we keep information consistent while synchronizing each other's states once communication is possible?". These are quite technical problems and are also common concerns in the general field of computer systems and networking.
 
-#### First problem: How do we find and connect to each other without a server?
+### First problem: How do we find and connect to each other without a server?
 
 Actually, this problem is connected to the basic structure of the Internet. For two computers to communicate over the Internet, they must identify each other by IP address, but ordinary users' IPs are frequently changed by carriers and are usually hidden behind NAT, so they cannot be probed directly from outside. So usually, both sides rely on a middle point that they can both connect to. That is the game server, the KakaoTalk server, the Discord server.
 
@@ -236,7 +233,7 @@ Then we get stuck again. **The channel for exchanging SDP itself has to come fro
 At this point, the problem looked a bit tricky. But unexpectedly, there was a good trick. **The fact is that the file-sharing protocol BitTorrent already operates public "trackers" for free worldwide**. A tracker is originally a place where you ask "which peers have this file?", but that mechanism can actually be used as a general matching service of "which peers have a certain identifier (room code)?". It is like borrowing public infrastructure that someone has already set up as a signaling channel.
 
 ![P2P signaling flow through a BitTorrent tracker](/images/p2p-signaling.png)
-*(Only the first two steps briefly go through the tracker; afterwards all game traffic flows through direct connection between the two browsers.)*
+<p style="text-align: center;"><em>(Only the first two steps briefly go through the tracker; afterwards all game traffic flows through direct connection between the two browsers.)</em></p>
 
 The library that cleanly abstracts this idea is [**Trystero**](https://github.com/dmotz/trystero). If you just give your friend a 12-digit room code, Trystero automatically matches peers with the same code through BitTorrent trackers and even handles the SDP exchange itself. From the user's perspective, you just enter the room code and you are done; from the developer's perspective, you do not need to operate a separate server for signaling.
 
@@ -266,7 +263,7 @@ There is a small detail here. When a user leaves the room, the slot is emptied b
 
 If I summarize the essence in one line, it is this. **Even without a central authentication server, if the client carries a persistent token, identity can be maintained as if on a server.** All trust depends on the memory of one host (if the host dies, the mapping disappears too), but since it only needs to last for one game session anyway, that is enough.
 
-#### Second problem: How do we keep everyone's state consistent?
+### Second problem: How do we keep everyone's state consistent?
 
 This problem is not about the communication channel itself, but about how to align everyone's game state after the channel is open. The game state must look the same to everyone. For example, if A's screen shows "B built a hotel" but B's screen shows "did not build", the game breaks down. In a P2P environment, everyone can send messages to each other, and everyone can also run game logic on their own computer. So naturally, the question arises: **"Whose decision shall we accept as truth?"**
 
@@ -279,7 +276,7 @@ There are largely three synchronization methods commonly discussed in distribute
 For turn-based games like BlueMarble, the third option naturally fits. The game rule itself that "only one person acts on their turn" already satisfies the distributed system condition that "there is only one authority at any moment" for free. So I decided to go with the **Authority rotation method**.
 
 ![Authority broadcast → validation → adoption flow](/images/authority-broadcast.png)
-*(One authority runs the reducer and broadcasts the resulting state; the rest only validate and adopt it as is.)*
+<p style="text-align: center;"><em>(One authority runs the reducer and broadcasts the resulting state; the rest only validate and adopt it as is.)</em></p>
 
 Specifically, the way it operates is as follows.
 
