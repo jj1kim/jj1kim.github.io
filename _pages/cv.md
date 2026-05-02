@@ -1,3 +1,4 @@
+<!--
 ---
 layout: single
 title: ""
@@ -30,3 +31,4 @@ You can download my CV in PDF format:
 <div style="margin-top: 1em; padding: 1em; background-color: var(--global-bg-color); border: 1px solid var(--global-border-color); border-radius: 4px; color: var(--global-text-color);">
   <p><strong>Note:</strong> If the PDF does not display above, please use the download button to view it in your PDF reader.</p>
 </div>
+-->
