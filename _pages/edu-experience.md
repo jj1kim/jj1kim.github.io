@@ -18,6 +18,11 @@ Education
   * Top STEM-based school in South Korea
   * Early Graduate in 2 year (academic excellance)
 
+Work experience
+======
+* **AI inference engineer**, FriendliAI <a href="https://friendli.ai/" target="_blank" rel="noopener noreferrer" aria-label="FriendliAI link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Jun 2026 - Current
+  * Full-time working for frontier AI inference engine development
+
 Research experience
 ======
 * Dec 2025 - Jun 2026 : **Undergraduate Researcher**
@@ -29,11 +34,6 @@ Research experience
   * SNU Scalable Computer Architecture Laboratory
   * Research about efficient serving system for LLM using MoE
   * Advisor : Jung Ho Ahn
-
-Work experience
-======
-* **AI inference engineer**, FriendliAI <a href="https://friendli.ai/" target="_blank" rel="noopener noreferrer" aria-label="FriendliAI link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Jun 2026 - Current
-  * Full-time working for frontier AI inference engine development
   
 Honors & Awards
 ======
