@@ -11,6 +11,8 @@ Education
 ======
 * **B.S.** in Seoul National University, 2029 (Expected)
   * Major in Computer Science & Engineering, Minor in Cvill & Environmental Engineering
+  * GPA : 4.0/4.3
+  * Absence for full-time work experience (26.7 ~ )
 
 * **High School Diploma** in Sejong Science High School, 2022
   * Top STEM-based school in South Korea
@@ -18,15 +20,20 @@ Education
 
 Research experience
 ======
-* Dec 2025 - Current : **Undergraduate Researcher**
+* Dec 2025 - Jun 2026 : **Undergraduate Researcher**
   * SNU Real-Time Ubiquitous System Laboratory
-  * Research about efficient computing system for Mobile SoC with Heterogeneous Accelerator
+  * Research about energy efficient heterogeneous SoC with real-time system
   * Advisor : Chang-Gun Lee
 
-* June 2025 – Nov 2025 : **Research Intern**
+* Jun 2025 – Nov 2025 : **Research Intern**
   * SNU Scalable Computer Architecture Laboratory
   * Research about efficient serving system for LLM using MoE
   * Advisor : Jung Ho Ahn
+
+Work experience
+======
+* **AI inference engineer**, FriendliAI <a href="https://friendli.ai/" target="_blank" rel="noopener noreferrer" aria-label="FriendliAI link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Jun 2026 - Current
+  * Full-time working for frontier AI inference engine development
   
 Honors & Awards
 ======
@@ -52,7 +59,6 @@ Club Experience
   * Clustered all servers with Kubernetes, Developed integrated dashboards and logging systems
   * Developed a Kubernetes-native GPU resource scheduler to automate allocation and ensure fair, efficient usage for all students in the department
   * Maintained essential student services such as account management and community platforms, incorporating ongoing feedback from administrative staff and users
-
 
 * **WaffleStudio** <a href="https://www.linkedin.com/company/wafflestudio/" target="_blank" rel="noopener noreferrer" aria-label="WaffleStudio link" style="font-size: 0.85em; text-decoration: none;">🔗</a>, Sep 2023 – Jul 2025
   * Provided Kotlin Springboot training to fellow students and collaboratively developed an internal community service platform
