@@ -69,13 +69,17 @@ redirect_from:
 
 /* Photo */
 .home-photo {
+  display: block;              /* override the theme's flex figure so the image can center */
   margin: 2.25rem 0 1.75rem;
   text-align: center;
 }
 .home-photo img {
+  display: block;
   width: 65%;
   max-width: 340px;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
 }
 .home-photo figcaption {
