@@ -1,3 +1,12 @@
+> ## 🔴 이 사이트는 현재 내려둔 상태입니다 (2026-09-07~)
+>
+> https://jj1kim.site 는 빈 페이지만 서빙 중입니다. 도메인·DNS·HTTPS는 정상이며 콘텐츠만 내려둔 상태입니다.
+>
+> **다시 올리려면:** `git push origin site-backup-20260907:master --force`
+>
+> 자세한 내용·주의사항은 **[SITE-OFFLINE.md](SITE-OFFLINE.md)** 를 반드시 읽어보세요.
+> (특히 이 `making` 브랜치에는 `CNAME` 파일이 없어서, 그대로 master에 밀면 도메인이 풀립니다.)
+
 # Academic Pages
 **Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
 
