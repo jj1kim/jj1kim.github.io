@@ -4,8 +4,9 @@
 > 도메인·DNS·HTTPS는 전부 살아 있고, 콘텐츠만 내려둔 상태입니다.
 > 다시 올리려면 아래 [복구 방법](#복구-방법) 한 줄이면 됩니다.
 
-- 내린 날짜: **2026-09-07**
+- 내린 날짜: **2026-11-09** (PR #92)
 - 내린 이유: 사용자 요청 (도메인은 유지한 채 사이트만 비공개)
+- 이력: 2026-09-07 처음 내림 → 2026-09-13 복구 → 2026-11-09 같은 플레이스홀더로 다시 내림
 
 ---
 
@@ -50,6 +51,7 @@ GitHub Pages는 **끄지 않았습니다.** `master` 브랜치의 내용만 최�
 |---|---|
 | 내리기 전 라이브 커밋 | `c303c80` — Merge pull request #91 from jj1kim/making |
 | 내림 커밋 | `90048b5` — take site offline, keep domain binding intact |
+| 현재 `master` | `5dd997a` — Merge pull request #92 from jj1kim/site-offline (`90048b5` 재적용) |
 | 현재 `master`의 파일 | `CNAME`, `.nojekyll`, `index.html` — **이 3개가 전부** |
 
 - `CNAME` (내용: `jj1kim.site`) — 유지. 이 파일이 커스텀 도메인을 붙들고 있습니다.
@@ -107,7 +109,7 @@ git push origin making
 | A 레코드 | `185.199.108.153`, `.109.153`, `.110.153`, `.111.153` (GitHub Pages) |
 | `www` 서브도메인 | **미설정** — `www.jj1kim.site` 접속 불가 |
 | Pages source | `master` 브랜치 / 루트 (`build_type: legacy`) |
-| HTTPS | 강제 적용. 인증서 `CN=jj1kim.site`, 만료 2026-12-03 (Pages 켜둔 상태라 자동 갱신) |
+| HTTPS | 강제 적용. 인증서 `CN=jj1kim.site`, 만료 2027-02-01 (Pages 켜둔 상태라 자동 갱신) |
 | 도메인 verify | **미인증** (`protected_domain_state: null`) |
 
 ### 나중에 Pages를 아예 끄고 싶어지면
